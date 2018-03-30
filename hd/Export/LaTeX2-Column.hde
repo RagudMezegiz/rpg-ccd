@@ -1,0 +1,309 @@
+\documentclass[twocolumn]{article}
+
+<!--TEMPLATE_NAME-->LaTeX - 2-Column Character Sheet<!--/TEMPLATE_NAME-->
+<!--TEMPLATE_DESCRIPTION-->
+This is a two-column LaTeX format similar to the 4th Edition RTF export formats that Metacreator produced. It does not include the character portrait.  The combat information sheet will appear on its own page, so it can be printed separately.<p>
+Please feel free to ask for extra features or send me corrections.<p>
+Created by Dave Terhune (dave.terhune@gmail.com)<p>
+Version 1.3 (not uploaded)
+<ul><li>Allowed word wrapping in "Effect" column of combat maneuvers table.</li></ul>
+Version 1.2 (5/17/2008)
+<ul><li>Added equipment weight</li><li>Corrected spacing between whole and fractional parts of numbers</li></ul>
+Version 1.1 (5/11/2008)
+<ul><li>Added additional &quot;&amp;&quot; replacements</li><li>Added equipment section</li><li>Changed to use two rows of boxes for END and STUN</li></ul>
+<!--/TEMPLATE_DESCRIPTION-->
+<!--FILE_EXTENSION-->tex<!--/FILE_EXTENSION-->
+<!--REG_REPLACE--><!--REGSTRING-->([^\\])\$(\d)<!--/REGSTRING--> <!--REPSTRING-->$1\\\$$2<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\d)%<!--/REGSTRING--><!--REPSTRING-->$1\\%<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(x|\+|-|\s|\b)1/4(\D|\b)<!--/REGSTRING--><!--REPSTRING-->$1\\nicefrac{1}{4}$2<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(x|\+|-|\s|\b)1/2(\D|\b)<!--/REGSTRING--><!--REPSTRING-->$1\\nicefrac{1}{2}$2<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(x|\+|-|\s|\b)3/4(\D|\b)<!--/REGSTRING--><!--REPSTRING-->$1\\nicefrac{3}{4}$2<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\d)\s\\nicefrac<!--/REGSTRING--><!--REPSTRING-->$1\\,\\nicefrac<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\d+\.?\d*)\s?(m|kg)<!--/REGSTRING--><!--REPSTRING-->\\unit[$1]{$2}<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING-->(\S)&(\S)<!--/REGSTRING--><!--REPSTRING-->$1\\&$2<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REPLACE--><!--DEFSTRING-->Chain & Rope<!--/DEFSTRING--><!--REPSTRING-->Chain \& Rope<!--/REPSTRING--><!--/REPLACE-->
+<!--REPLACE--><!--DEFSTRING-->Missiles & Rockets<!--/DEFSTRING--><!--REPSTRING-->Missiles \& Rockets<!--/REPSTRING--><!--/REPLACE-->
+<!--REPLACE--><!--DEFSTRING-->Carts & Carriages<!--/DEFSTRING--><!--REPSTRING-->Carts \& Carriages<!--/REPSTRING--><!--/REPLACE-->
+<!--REPLACE--><!--DEFSTRING-->Agricultural & Construction<!--/DEFSTRING--><!--REPSTRING-->Agricultural \& Construction<!--/REPSTRING--><!--/REPLACE-->
+<!--REPLACE--><!--DEFSTRING-->Balloons & Zeppelins<!--/DEFSTRING--><!--REPSTRING-->Balloons \& Zeppelins<!--/REPSTRING--><!--/REPLACE-->
+<!--REPLACE--><!--DEFSTRING-->Industrial & Exploratory<!--/DEFSTRING--><!--REPSTRING-->Industrial \& Exploratory<!--/REPSTRING--><!--/REPLACE-->
+<!--REPLACE--><!--DEFSTRING-->Fiction & Space<!--/DEFSTRING--><!--REPSTRING-->Fiction \& Space<!--/REPSTRING--><!--/REPLACE-->
+<!--REPLACE--><!--DEFSTRING-->Vehicles & Bases<!--/DEFSTRING--><!--REPSTRING-->Vehicles \& Bases<!--/REPSTRING--><!--/REPLACE-->
+
+\usepackage{amsfonts, multido, nicefrac, units, xtab}
+
+\pagestyle{empty}
+
+% Page layout variables
+\setlength{\voffset}{-.5in}
+\setlength{\topmargin}{0in}
+\addtolength{\textheight}{2in}
+\addtolength{\hoffset}{-.25in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\textwidth}{7.5in}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{1ex plus .5ex minus .2ex}
+
+% Row of boxes command
+\newcommand{\boxes}[1]{\multido{}{#1}{\ensuremath{\square}}}
+
+\begin{document}
+
+% Name block.  To present a cleaner appearance, any of these that aren't filled in can be deleted.
+\begin{tabular}{r@{:\quad}l}
+\bfseries Name & \Large\bfseries <!--CHARACTER_NAME-->\\
+\bfseries Aliases & <!--ALTERNATE_IDS-->\\
+\bfseries Player & <!--PLAYER_NAME-->\\
+\bfseries Campaign & <!--CAMPAIGN_NAME-->\\
+\bfseries GM & <!--GM-->\\
+\end{tabular}
+
+\bigskip
+
+%Characteristics block
+\begin{tabular}{rlrrp{.475\columnwidth}}
+\textbf{Value} & \textbf{Char} & \textbf{Cost} & \textbf{Roll} & \textbf{Notes}\\
+<!--STR--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & STR & <!--COST--> & <!--ROLL--> & \small Lift <!--STR_LIFT-->; <!--STR_DICE--><!--IF_END--> [<!--STR_END-->]<!--/IF_END--><!--/STR-->\\
+<!--DEX--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & DEX & <!--COST--> & <!--ROLL--><!--/DEX--> & \small OCV <!--OCV-->; DCV <!--DCV-->\\
+<!--CON--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & CON & <!--COST--> & <!--ROLL--><!--/CON-->\\
+<!--BODY--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & BODY & <!--COST--> & <!--ROLL--><!--/BODY-->\\
+<!--INT--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & INT & <!--COST--> & <!--ROLL--> & \small <!--NOTES--><!--/INT-->\\
+<!--EGO--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & EGO & <!--COST--> & <!--ROLL--><!--/EGO--> & \small ECV: <!--ECV-->\\
+<!--PRE--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & PRE & <!--COST--> & <!--ROLL--> & \small PRE Attack: <!--PRE_DICE--><!--/PRE-->\\
+<!--COM--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & COM & <!--COST--> & <!--ROLL--><!--/COM-->\\
+<!--PD--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & PD & <!--COST--> & & \small Total: <!--NOTES--><!--/PD-->\\
+<!--ED--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & ED & <!--COST--> & & \small Total: <!--NOTES--><!--/ED-->\\
+<!--SPD--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & SPD & <!--COST--> & & \small <!--NOTES--><!--/SPD-->\\
+<!--REC--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & REC & <!--COST--><!--/REC-->\\
+<!--END--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & END & <!--COST--><!--/END-->\\
+<!--STUN--><!--VAL--><!--IF_SECONDARY-->+<!--SECONDARY_INCREASE--><!--/IF_SECONDARY--> & STUN & <!--COST--><!--/STUN-->\\
+\end{tabular}
+
+\bigskip
+
+% Movement block
+\begin{small}
+\begin{tabular}{r@{:\quad}l}
+<!--IF_RUNNING-->\bfseries Running & <!--RUNNING_TOTAL--> [<!--RUNNING_TOTAL_NONCOMBAT--> NC]\\<!--/IF_RUNNING-->
+<!--IF_SWIMMING-->\bfseries Swimming & <!--SWIMMING_TOTAL--> [<!--SWIMMING_TOTAL_NONCOMBAT--> NC]\\<!--/IF_SWIMMING-->
+<!--IF_LEAPING-->\bfseries Leaping & <!--LEAPING_TOTAL--> [<!--LEAPING_TOTAL_NONCOMBAT--> NC]\\<!--/IF_LEAPING-->
+<!--IF_FLIGHT-->\bfseries Flight & <!--FLIGHT_TOTAL--> [<!--FLIGHT_TOTAL_NONCOMBAT--> NC]\\<!--/IF_FLIGHT-->
+<!--IF_GLIDING-->\bfseries Gliding & <!--GLIDING_TOTAL--> [<!--GLIDING_TOTAL_NONCOMBAT--> NC]\\<!--/IF_GLIDING-->
+<!--IF_SWINGING-->\bfseries Swinging & <!--SWINGING_TOTAL--> [<!--SWINGING_TOTAL_NONCOMBAT--> NC]\\<!--/IF_SWINGING-->
+<!--IF_TELEPORTATION-->\bfseries Teleportation & <!--TELEPORTATION_TOTAL--> [<!--TELEPORTATION_TOTAL_NONCOMBAT--> NC]\\<!--/IF_TELEPORTATION-->
+<!--IF_TUNNELING-->\bfseries Tunneling & <!--TUNNELING_TOTAL--> [<!--TUNNELING_TOTAL_NONCOMBAT--> NC]\\<!--/IF_TUNNELING-->
+\end{tabular}
+\end{small}
+
+<!--IFPOWERS-->
+\bigskip
+
+% Powers block
+\tablefirsthead{\textbf{Points} & \textbf{Powers} & \textbf{END}\\}
+\tablehead{\textbf{Points} & \textbf{Powers} (continued) & \textbf{END}\\}
+\begin{xtabular}{rp{.6\columnwidth}r}
+<!--POWERS--><!--COMPOUND_POWER_SEPARATOR--> \textbf{plus} <!--/COMPOUND_POWER_SEPARATOR--><!--IS_NOT_SEPARATOR--><!--POWER_COST--><!--/IS_NOT_SEPARATOR--> & <!--IFLIST--><!--LISTPREFIX--><!--/IFLIST--><!--IFNAME-->\emph{<!--NAME-->:} <!--/IFNAME-->\small <!--TEXT--><!--IF_END--> &  <!--POWER_END--><!--/IF_END--><!--IFNOTES-->\\ & \small\textbf{Notes:} <!--NOTES--><!--/IFNOTES-->\\
+<!--/POWERS-->\end{xtabular}
+<!--/IFPOWERS-->
+
+<!--IFMARTIAL_ARTS-->
+\bigskip
+
+% Martial arts block
+\tablefirsthead{\textbf{Points} & \textbf{Martial Arts}\\}
+\tablehead{\textbf{Points} & \textbf{Martial Arts} (cont.)\\}
+\begin{xtabular}{rp{.7\columnwidth}}
+<!--MARTIAL_ARTS--><!--IS_NOT_LIST--><!--COST--><!--/IS_NOT_LIST--> & <!--TEXT--><!--IFNOTES-->\\ & \small \textbf{Notes:} <!--NOTES--><!--/IFNOTES-->\\
+<!--/MARTIAL_ARTS-->\end{xtabular}
+<!--/IFMARTIAL_ARTS-->
+
+\bigskip
+
+% Skills, Perks, and Talents block
+\tablefirsthead{\textbf{Points} & \textbf{Skills, Perks, Talents}\\}
+\tablehead{\textbf{Points} & \textbf{Skills, Perks, Talents} (cont.)\\}
+\begin{xtabular}{rp{.7\columnwidth}}
+<!--SKILLS--><!--IS_NOT_SEPARATOR--><!--COST--><!--/IS_NOT_SEPARATOR--> & <!--IFLIST--><!--LISTPREFIX--><!--/IFLIST--><!--IFNAME-->\emph{<!--NAME-->:} <!--/IFNAME--><!--TEXT--><!--IFNOTES-->\\ & \textbf{Notes:} <!--NOTES--><!--/IFNOTES-->\\
+<!--/SKILLS--><!--IFSKILLS--><!--IFPERKS-->\\<!--/IFPERKS--><!--IF_NO_PERKS--><!--IFTALENTS-->\\<!--/IFTALENTS--><!--/IF_NO_PERKS--><!--/IFSKILLS-->
+<!--PERKS--><!--IS_NOT_SEPARATOR--><!--COST--><!--/IS_NOT_SEPARATOR--> & <!--IFLIST--><!--LISTPREFIX--><!--/IFLIST--><!--IFNAME-->\emph{<!--NAME-->:} <!--/IFNAME--><!--TEXT--><!--IFNOTES-->\\ & \textbf{Notes:} <!--NOTES--><!--/IFNOTES-->\\
+<!--/PERKS--><!--IFPERKS--><!--IFTALENTS-->\\<!--/IFTALENTS--><!--/IFPERKS-->
+<!--TALENTS--><!--IS_NOT_SEPARATOR--><!--COST--><!--/IS_NOT_SEPARATOR--> & <!--IFLIST--><!--LISTPREFIX--><!--/IFLIST--><!--IFNAME-->\emph{<!--NAME-->:} <!--/IFNAME--><!--TEXT--><!--IFNOTES-->\\ & \textbf{Notes:} <!--NOTES--><!--/IFNOTES-->\\
+<!--/TALENTS-->\end{xtabular}
+
+\bigskip
+
+% Disadvantages block
+\tablefirsthead{\textbf{Points} & \textbf{Disadvantages}\\}
+\tablehead{\textbf{Points} & \textbf{Disadvantages} (continued)\\}
+\begin{xtabular}{rp{.7\columnwidth}}
+<!--DISADS--><!--IS_NOT_SEPARATOR--><!--COST--><!--/IS_NOT_SEPARATOR--> & <!--IFLIST--><!--LISTPREFIX--><!--/IFLIST--><!--IFNAME-->\emph{<!--NAME-->:} <!--/IFNAME--><!--TEXT--><!--IFNOTES-->\\ & \textbf{Notes:} <!--NOTES--><!--/IFNOTES-->\\
+<!--/DISADS-->\end{xtabular}
+
+<!--IFEQUIPMENT-->
+\bigskip
+
+% Equipment block
+\tablefirsthead{\textbf{Weight} & \textbf{Equipment}\\}
+\tablehead{\textbf{Weight} & \textbf{Equipment} (continued)\\}
+\begin{xtabular}{rp{.8\columnwidth}}
+<!--EQUIPMENT--><!--COMPOUND_POWER_SEPARATOR--> \textbf{plus} <!--/COMPOUND_POWER_SEPARATOR--><!--EQUIPMENT_WEIGHT--> & <!--IFNAME-->\emph{<!--NAME-->:} <!--/IFNAME-->\small <!--TEXT--><!--IFNOTES--> \textbf{Notes:} <!--NOTES--><!--/IFNOTES-->\\<!--/EQUIPMENT-->\end{xtabular}
+<!--/IFEQUIPMENT-->
+
+\smallskip
+
+\begin{center}
+\begin{tabular}{rl}
+\multicolumn{2}{c}{\textbf{Experience}}\\
+<!--EARNED_EXP--> & Earned Experience Points\\
+<!--SPENT_EXP--> & Spent Experience Points\\
+\end{tabular}
+
+\smallskip
+
+% Point Totals block
+\begin{tabular}{lcrlcr}
+\textbf{Char} & & <!--CHARACTERISTIC_POINTS--> & \textbf{Base} & & <!--BASE_POINTS-->\\
+\textbf{Pow} & + & <!--POWER_POINTS--> & \textbf{Disads} & + & <!--DISAD_POINTS-->\\
+\textbf{Skills} & + & <!--SKILL_PERK_TALENT_MARTIAL_ART_POINTS--> & \textbf{Exp} & + & <!--SPENT_EXP-->\\
+\textbf{Total} & = & <!--TOTAL_POINTS--> & \textbf{Total} & = & <!--MATH--><!--BASE_POINTS--> + <!--DISAD_POINTS--> + <!--SPENT_EXP--><!--/MATH-->\\
+\end{tabular}
+\end{center}
+
+\bigskip
+
+\begin{small}
+\textbf{Height:}~<!--HEIGHT-->, \textbf{Weight:}~<!--WEIGHT-->, \textbf{Hair:}~<!--HAIR_COLOR-->, \textbf{Eyes:}~<!--EYE_COLOR-->
+\end{small}
+
+<!--IF_APPEARANCE-->\paragraph{Appearance:} <!--APPEARANCE--><!--/IF_APPEARANCE-->
+
+<!--IF_PERSONALITY-->\paragraph{Personality:} <!--PERSONALITY--><!--/IF_PERSONALITY-->
+
+<!--IF_QUOTE-->\paragraph{Quote:} <!--QUOTE--><!--/IF_QUOTE-->
+
+<!--IF_TACTICS-->\paragraph{Tactics:} <!--TACTICS--><!--/IF_TACTICS-->
+
+<!--IF_BACKGROUND-->\paragraph{Background:} <!--BACKGROUND--><!--/IF_BACKGROUND-->
+
+\clearpage
+
+% Combat information sheet
+\textbf{\large Combat Information}
+
+\textbf{OCV} <!--OCV--> \qquad \textbf{DCV} <!--DCV--> \qquad \textbf{ECV} <!--ECV-->
+
+\smallskip
+
+\textbf{Phases:} <!--IF_SECONDARY_PHASE_1-->1, <!--/IF_SECONDARY_PHASE_1--><!--IF_SECONDARY_PHASE_2-->2, <!--/IF_SECONDARY_PHASE_2--><!--IF_SECONDARY_PHASE_3-->3, <!--/IF_SECONDARY_PHASE_3--><!--IF_SECONDARY_PHASE_4-->4, <!--/IF_SECONDARY_PHASE_4--><!--IF_SECONDARY_PHASE_5-->5, <!--/IF_SECONDARY_PHASE_5--><!--IF_SECONDARY_PHASE_6-->6, <!--/IF_SECONDARY_PHASE_6--><!--IF_SECONDARY_PHASE_7-->7, <!--/IF_SECONDARY_PHASE_7--><!--IF_SECONDARY_PHASE_8-->8, <!--/IF_SECONDARY_PHASE_8--><!--IF_SECONDARY_PHASE_9-->9, <!--/IF_SECONDARY_PHASE_9--><!--IF_SECONDARY_PHASE_10-->10, <!--/IF_SECONDARY_PHASE_10--><!--IF_SECONDARY_PHASE_11-->11, <!--/IF_SECONDARY_PHASE_11--><!--IF_SECONDARY_PHASE_12-->12<!--/IF_SECONDARY_PHASE_12-->
+
+<!--IFCOMBAT_LEVELS-->\smallskip\textbf{Combat Levels:}\mbox{}\\<!--COMBAT_LEVELS--><!--SEPARATOR-->\\<!--/SEPARATOR--><!--COMBAT_LEVEL_TEXT--><!--/COMBAT_LEVELS--><!--/IFCOMBAT_LEVELS-->
+
+\bigskip
+
+\textbf{\large Combat Modifiers}
+
+\begin{small}
+\begin{tabular}{lcccccc}
+\bfseries Range & 0--4 & 5--8 & 9--16 & 17--32 & 33--64 & 65--128\\
+\bfseries RMOD & 0 & -2 & -4 & -6 & -8 & -10\\
+\end{tabular}
+
+\smallskip
+
+\begin{tabular}{lcc}
+\bfseries Targeting Shot & \bfseries OCV & \bfseries Hit Location\\
+Head shot (Head to Shoulders) & -4 & 1d6+3\\
+High shot (Head to Vitals) & -2 & 2d6+1\\
+Body shot (Hands to Legs) & -1 & 2d6+4\\
+Low shot (Shoulders to Feet) & -2 & 2d6+7\\
+Leg shot (Vitals to Feet) & -4 & 1d6+12\\
+\end{tabular}
+\end{small}
+
+\bigskip
+
+\textbf{\large Hit Location Chart}
+
+\begin{small}
+\setlength{\tabcolsep}{.5\tabcolsep}
+\begin{tabular}{clcccc}
+\bfseries Roll & \bfseries Location & \bfseries STUNx & \bfseries N STUN & \bfseries BODYx & \bfseries OCV\\
+3--5 & Head & x5 & x2 & x2 & -8\\
+6 & Hands & x1 & x1/2 & x1/2 & -6\\
+7--8 & Arms & x2 & x1/2 & x1/2 & -5\\
+9 & Shoulders & x3 & x1 & x1 & -5\\
+10--11 & Chest & x3 & x1 & x1 & -3\\
+12 & Stomach & x4 & x1.5 & x1 & -7\\
+13 & Vitals & x4 & x1.5 & x2 & -8\\
+14 & Thighs & x2 & x1 & x1 & -4\\
+15--16 & Legs & x2 & x1/2 & x1/2 & -6\\
+17--18 & Feet & x1 & x1/2 & x1/2 & -8\\
+\end{tabular}
+\setlength{\tabcolsep}{2\tabcolsep}
+\end{small}
+
+\bigskip
+
+\textbf{\large Defenses}
+
+\begin{tabular}{lc}
+& \bfseries Amount\\
+<!--PD-->Physical Defense & <!--PD_NONRESISTANT_TOTAL-->\\
+Resistant Physical Defense & <!--PD_RESISTANT_TOTAL--><!--/PD-->\\
+<!--ED-->Energy Defense & <!--ED_NONRESISTANT_TOTAL-->\\
+Resistant Energy Defense & <!--ED_RESISTANT_TOTAL--><!--/ED-->\\
+Mental Defense & <!--MENTAL_DEFENSE_TOTAL-->\\
+Power Defense & <!--POWER_DEFENSE_TOTAL-->\\
+\end{tabular}
+
+% Make the damage tracker appear as low on the page as it will go, to avoid interfering with the maneuvers/attacks that will be in the second column.
+\vfill
+
+\textbf{\large Damage Tracker}
+
+\begin{tabular*}{\textwidth}{lcl}
+<!--END-->END & <!--SECONDARY--> & \boxes{<!--MATH--><!--SECONDARY--> / 2<!--/MATH-->}\\
+& & \boxes{<!--MATH-->(<!--SECONDARY--> - 1) / 2<!--/MATH-->}\\<!--/END-->
+<!--STUN-->STUN & <!--SECONDARY--> & \boxes{<!--MATH--><!--SECONDARY--> / 2<!--/MATH-->}\\
+& & \boxes{<!--MATH-->(<!--SECONDARY--> - 1) / 2<!--/MATH-->}\\<!--/STUN-->
+\small STUN $<0$: & & \boxes{10}\hspace{1em}\boxes{10}\hspace{1em}\boxes{10}\hspace{1em}\boxes{10}\hspace{1em}\boxes{10}\\
+<!--BODY-->BODY & <!--SECONDARY--> & \boxes{<!--SECONDARY-->}\\
+\small BODY $<0$: & & \boxes{<!--SECONDARY-->}\\<!--/BODY-->
+\end{tabular*}
+
+\newpage
+
+% Maneuver section
+\textbf{\large Combat Maneuvers}
+
+\begin{small}
+\setlength{\tabcolsep}{.25\tabcolsep}
+\begin{tabular}{lcccp{.4\columnwidth}}
+\bfseries Maneuver & \bfseries Phase & \bfseries OCV & \bfseries DCV & \bfseries Effect\\
+Block & 1/2 & +0 & +0 & Block, abort\\
+Brace & 0 & +2 & 1/2 & +2 vs. Range Mod\\
+Disarm & 1/2 & -2 & +0 & STR<!--STR--><!--VAL--><!--/STR--> Disarm\\
+Dodge & 1/2 & --- & +3 & Abort, vs. all attacks\\
+Grab & 1/2 & -1 & -2 & STR<!--STR--><!--VAL--><!--/STR--> Grab two limbs\\
+Grab By & 1/2 & -3 & -4 & Move and Grab\\
+Haymaker & 1/2* & +0 & -5 & x1.5 attack damage\\
+Move By & 1/2 & -2 & -2 & STR/2 + v/5\\
+Move Through & 1/2 & -v/5 & -3 & STR + v/3\\
+Set & 1 & +1 & +0 & Ranged attacks only\\
+Strike & 1/2 & +0 & +0 & STR<!--STR--><!--STR_DICE--><!--/STR--> or weapon\\
+<!--MANEUVERS--><!--MANEUVER_NAME--> & <!--MANEUVER_PHASE--> & <!--MANEUVER_OCV--> & <!--MANEUVER_DCV--> & <!--MANEUVER_EFFECT-->\\
+<!--/MANEUVERS-->\end{tabular}
+\setlength{\tabcolsep}{4\tabcolsep}
+\end{small}
+
+\bigskip
+
+\textbf{\large Attacks}
+
+\begin{tabular}{lccr}
+\bfseries Attack & \bfseries Range & \bfseries Damage & \bfseries END\\
+<!--POWERS--><!--IF_ATTACK--><!--IFNAME--><!--NAME-->: <!--/IFNAME--> & <!--POWER_RANGE--> & <!--POWER_DMG--> & <!--POWER_END-->\\
+<!--/IF_ATTACK--><!--/POWERS--><!--EQUIPMENT--><!--IF_ATTACK--><!--IFNAME--><!--NAME-->:<!--/IFNAME--><!--IF_COMPOUND_POWER--><!--COMPONENT_POWERS--> & <!--POWER_RANGE--> & <!--POWER_DMG--> & <!--POWER_END-->\\<!--/COMPONENT_POWERS--><!--/IF_COMPOUND_POWER--><!--/IF_ATTACK--><!--/EQUIPMENT-->\end{tabular}
+
+\end{document}
+
