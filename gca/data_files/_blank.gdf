@@ -1,0 +1,246 @@
+Version=3
+* The version information above MUST be the first line of the data file
+Description=
+WorldBook=
+Requires=
+LoadAfter=
+Taboo=
+
+[AUTHOR]
+********************************************************************************
+*
+* GURPS(R) Character Assistant
+* Filename: Blank.gdf
+* Created: August 1, 2005
+* Modified: August 1, 2005
+* Requires GCA v4 or later!
+*
+* Information in this file includes:
+*    Advantages, Perks, Disadvantages, Quirks, Including Bonuses and Penalties.
+*    Skills, Including Bonuses, Classes, Needs and Prereqs.
+*    Spells, Including Bonuses, Colleges, Needs and Prereqs.
+*    Equipment
+*    Templates
+*
+********************************************************************************
+*
+* Dave Terhune
+*
+* If you find any errors or ommissions in this file please contact the author at:
+* dave.terhune@gmail.com
+*
+********************************************************************************
+*
+* GURPS is a registered trademark of Steve Jackson Games Incorporated, used with
+* GCA by permission of Steve Jackson Games. All rights reserved.
+*
+* The GURPS game is copyright (c) 1986-1989, 1991-1994 by Steve Jackson Games
+* Incorporated. This product includes copyrighted material from the GURPS game,
+* which is used by permission of Steve Jackson Games Incorporated. All rights
+* reserved by Steve Jackson Games Incorporated.
+*
+********************************************************************************
+
+********************************************************************************
+[Advantages]
+********************************************************************************
+<General>
+
+<Exotic Physical>
+
+<Exotic Mental>
+
+<Paranormal Physical>
+
+<Paranormal Mental>
+
+<Mundane Physical>
+
+<Mundane Mental>
+
+<Mundane Social>
+
+********************************************************************************
+[Perks]
+********************************************************************************
+<Perks>
+
+********************************************************************************
+[Disadvantages]
+********************************************************************************
+<General>
+
+<Exotic Physical>
+
+<Exotic Mental>
+
+<Paranormal Physical>
+
+<Paranormal Mental>
+
+<Mundane Physical>
+
+<Mundane Mental>
+
+<Mundane Social>
+
+********************************************************************************
+[QUIRKS]
+********************************************************************************
+<General>
+
+<Mental>
+
+<Physical>
+
+********************************************************************************
+[SKILLS]
+********************************************************************************
+<Animal>
+
+<Arts/Entertainment>
+
+<Athletic>
+
+<Athletic - Combat Art/Sport>
+
+<Business>
+
+<Combat/Weapons - Melee Combat>
+
+<Combat/Weapons - Ranged Combat>
+
+<Craft>
+
+<Criminal/Street>
+
+<Design/Invention>
+
+<Esoteric>
+
+<Everyman>
+
+<Knowledge>
+
+<Medical>
+
+<Military>
+
+<Natural Sciences>
+
+<Occult/Magical>
+
+<Outdoor/Exploration>
+
+<Plant>
+
+<Police>
+
+<Repair/Maintenance>
+
+<Scholarly>
+
+<Social>
+
+<Social Sciences/Humanities>
+
+<Spy>
+
+<Technical>
+
+<Vehicle>
+
+<Combat Techniques>
+
+<Noncombat Techniques>
+
+<Wildcard!>
+
+********************************************************************************
+[SPELLS]
+********************************************************************************
+
+********************************************************************************
+[GROUPS]
+********************************************************************************
+
+********************************************************************************
+[Modifiers]
+********************************************************************************
+
+********************************************************************************
+[Templates]
+********************************************************************************
+<Character Templates>
+
+<Racial Templates>
+
+********************************************************************************
+[Equipment]
+********************************************************************************
+
+<Clothing>
+
+<Animals>
+
+<Miscellaneous Equipment - Camping & Survival Gear>
+
+<Miscellaneous Equipment - Communications & Information Gear>
+
+<Animals - Equestrian Gear>
+
+<Miscellaneous Equipment - Law-Enforcement¸ Thief¸ & Spy Gear>
+
+<Miscellaneous Equipment - Medical Gear>
+
+<Miscellaneous Equipment - Optics & Sensors>
+
+<Miscellaneous Equipment - Tools>
+
+<Miscellaneous Equipment - Weapon & Combat Accessories>
+
+<Animals - Horse Armor (Barding)>
+
+<Armor - Low Tech Body Armor>
+
+<Armor - Low Tech Limb Armor>
+
+<Armor - Low Tech Headgear>
+
+<Armor - Low Tech Gloves & Footwear>
+
+<Armor - High- & Ultra- Tech Body Armor>
+
+<Armor - High- & Ultra- Tech Gloves & Footwear>
+
+<Armor - High- & Ultra- Tech Headgear>
+
+<Armor - High- & Ultra- Tech Environment Suits>
+
+<Vehicles - Ground>
+
+<Vehicles - Watercraft>
+
+<Vehicles - Aircraft>
+
+<Vehicles - Spacecraft>
+
+<Firearms - Pistols & SMGs>
+
+<Firearms - Rifles & Shotguns>
+
+<Heavy Weapons>
+
+<Firearms - Ultra-Tech Firearms>
+
+<Shields>
+
+<Melee Weapons>
+
+<Muscle-Powered Ranged Weapons>
+
+<Hand Grenades & Incendiaries>
+
+<Natural Attacks>
+
+<Valuables>

@@ -1,0 +1,637 @@
+Version=3
+* The version information above MUST be the first line of the data file
+Description=This file contains data for the Magesea campaign.
+WorldBook=Magesea
+Requires="GURPS Basic Set 4th Ed.--Characters.gdf", "GURPS Fantasy 4e.gdf", "GURPS Magic 4e.gdf"
+LoadAfter=All
+
+[AUTHOR]
+********************************************************************************
+*
+* GURPS(R) Character Assistant
+* Filename: Magesea.gdf
+* Created: March 9, 2014
+* Modified: May 8, 2014
+* Requires GCA v4 or later!
+*
+* Information in this file includes:
+*    Advantages, Perks, Disadvantages, Quirks, Including Bonuses and Penalties.
+*    Skills, Including Bonuses, Classes, Needs and Prereqs.
+*    Spells, Including Bonuses, Colleges, Needs and Prereqs.
+*    Equipment
+*    Templates
+*
+********************************************************************************
+*
+* Dave Terhune
+*
+* If you find any errors or ommissions in this file please contact the author at:
+* dave.terhune@gmail.com
+*
+********************************************************************************
+*
+* GURPS is a registered trademark of Steve Jackson Games Incorporated, used with
+* GCA by permission of Steve Jackson Games. All rights reserved.
+*
+* The GURPS game is copyright (c) 1986-1989, 1991-1994 by Steve Jackson Games
+* Incorporated. This product includes copyrighted material from the GURPS game,
+* which is used by permission of Steve Jackson Games Incorporated. All rights
+* reserved by Steve Jackson Games Incorporated.
+*
+********************************************************************************
+
+********************************************************************************
+[Advantages]
+********************************************************************************
+
+* Delete Advantages not applicable or available
+#Delete "AD:G-Experience"
+#Delete "AD:Improved G-Tolerance"
+#Delete "AD:Digital Mind"
+#Delete "AD:Modular Abilities (Chip Slots)"
+#Delete "AD:Modular Abilities (Computer Brain)"
+#Delete "AD:Telecommunication (Infrared Communication)"
+#Delete "AD:Telecommunication (Laser Communication)"
+#Delete "AD:Telecommunication (Radio)"
+
+<General>
+
+<Exotic Physical>
+
+<Exotic Mental>
+
+<Paranormal Physical>
+
+<Paranormal Mental>
+
+<Mundane Physical>
+
+<Mundane Mental>
+
+<Mundane Social>
+
+* Cultural Familiarities
+Barbarian, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Elemental, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Imperial, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Rafter, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Sea Reaver, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Solar, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+
+* Languages
+Airspeech (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Airspeech (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Ancient Coran (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Ancient Coran (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Battle Language, 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Comra (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Earthspeech (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Earthspeech (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Firespeech (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Firespeech (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Haraith (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Haraith (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+High Coran (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+High Coran (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Low Coran (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Low Coran (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Rafter (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Rafter (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Rogg Sign Language, 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Sign Language, Social Background)
+Seaspeech (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Seaspeech (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Solar (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Solar (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Tal (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Tal (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Trolltalk (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Trolltalk (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+
+********************************************************************************
+[Perks]
+********************************************************************************
+<Perks>
+
+********************************************************************************
+[Disadvantages]
+********************************************************************************
+
+* Delete Disadvantages not applicable or available
+#Delete "DI:Space Sickness"
+
+<General>
+
+<Exotic Physical>
+
+<Exotic Mental>
+
+<Paranormal Physical>
+
+<Paranormal Mental>
+
+<Mundane Physical>
+
+<Mundane Mental>
+
+<Mundane Social>
+
+********************************************************************************
+[QUIRKS]
+********************************************************************************
+<General>
+
+<Mental>
+
+<Physical>
+
+********************************************************************************
+[SKILLS]
+********************************************************************************
+
+<Animal>
+
+<Arts/Entertainment>
+
+<Athletic>
+
+<Athletic - Combat Art/Sport>
+
+<Business>
+
+<Combat/Weapons - Melee Combat>
+
+<Combat/Weapons - Ranged Combat>
+
+<Craft>
+
+<Criminal/Street>
+
+<Design/Invention>
+
+<Esoteric>
+
+<Everyman>
+
+<Knowledge>
+
+<Medical>
+
+<Military>
+
+<Natural Sciences>
+
+<Occult/Magical>
+
+<Outdoor/Exploration>
+
+<Plant>
+
+<Police>
+
+<Repair/Maintenance>
+
+<Scholarly>
+
+<Social>
+
+<Social Sciences/Humanities>
+
+<Spy>
+
+<Technical>
+
+<Vehicle>
+
+<Combat Techniques>
+
+<Noncombat Techniques>
+
+<Wildcard!>
+
+********************************************************************************
+[SPELLS]
+********************************************************************************
+
+* Delete Spells not applicable or available
+#Delete "SP:Awaken Computer"
+#Delete "SP:Radio Hearing"
+#Delete "SP:See Radiation"
+#Delete "SP:Seek Radiation"
+#Delete "SP:Irradiate"
+#Delete "SP:Extinguish Radiation"
+#Delete "SP:Resist Radiation"
+#Delete "SP:Cure Radiation"
+#Delete "SP:Radiation Jet"
+#Delete "SP:Breathe Radiation"
+#Delete "SP:Seek Plastic"
+#Delete "SP:Identify Plastic"
+#Delete "SP:Shape Plastic"
+#Delete "SP:Plastic Vision"
+#Delete "SP:Body of Plastic"
+#DeleteCat SP, "Syntactic"
+#Delete "SP:Communicate (Verb)"
+#Delete "SP:Control (Verb)"
+#Delete "SP:Create (Verb)"
+#Delete "SP:Heal (Verb)"
+#Delete "SP:Move (Verb)"
+#Delete "SP:Protect (Verb)"
+#Delete "SP:Sense (Verb)"
+#Delete "SP:Strengthen (Verb)"
+#Delete "SP:Transform (Verb)"
+#Delete "SP:Weaken (Verb)"
+#Delete "SP:Air (Noun)"
+#Delete "SP:Animal (Noun)"
+#Delete "SP:Body (Noun)"
+#Delete "SP:Earth (Noun)"
+#Delete "SP:Fire (Noun)"
+#Delete "SP:Food (Noun)"
+#Delete "SP:Image (Noun)"
+#Delete "SP:Light (Noun)"
+#Delete "SP:Magic (Noun)"
+#Delete "SP:Mind (Noun)"
+#Delete "SP:Plant (Noun)"
+#Delete "SP:Sound (Noun)"
+#Delete "SP:Spirit (Noun)"
+#Delete "SP:Water (Noun)"
+
+********************************************************************************
+[GROUPS]
+********************************************************************************
+
+********************************************************************************
+[Modifiers]
+********************************************************************************
+
+********************************************************************************
+[Templates]
+********************************************************************************
+
+* First, remove templates that we don't want to appear in the list.
+
+* Basic Set
+* Character templates
+#Delete "TE:Investigator (Basic Set)"
+#Delete "TE:Mage (Basic Set)"
+#Delete "TE:Heroic Knight (Basic Set)"
+#Delete "TE:Warrior (Basic Set)"
+#Delete "TE:Warrior - Heroic (Basic Set)"
+#Delete "TE:Warrior - Knight (Basic Set)"
+#Delete "TE:Soldier of Fortune (Basic Set)"
+
+* Racial templates
+#Delete "TE:Dragon (Basic Set)"
+#Delete "TE:Dwarf (Basic Set)"
+#Delete "TE:Felinoid (Basic Set)"
+#Delete "TE:Vampire (Basic Set)"
+#Delete "TE:Elf (Basic Set)"
+
+* Meta-traits
+#Delete "TE:Machine"
+#Delete "TE:AI"
+
+* Fantasy
+* Character templates
+#DeleteCat TE, "Character Templates - Fantasy"
+#Delete "TE:Archer - Bowman (Fantasy)"
+#Delete "TE:Archer - Crossbowman (Fantasy)"
+#Delete "TE:Archer - Rifleman (Fantasy)"
+#Delete "TE:Archer - Slingman (Fantasy)"
+#Delete "TE:Archer - Spearman (Fantasy)"
+#Delete "TE:Archer (Fantasy)"
+#Delete "TE:Artificer - Artillery (Fantasy)"
+#Delete "TE:Artificer - Chemistry (Fantasy)"
+#Delete "TE:Artificer - Heavy Equipment (Fantasy)"
+#Delete "TE:Artificer - Mechanisms (Fantasy)"
+#Delete "TE:Artificer (Fantasy)"
+#Delete "TE:Assassin (Fantasy)"
+#Delete "TE:Bandit (Fantasy)"
+#Delete "TE:Barbarian - Desert (Fantasy)"
+#Delete "TE:Barbarian - Plains (Fantasy)"
+#Delete "TE:Barbarian - Seafaring (Fantasy)"
+#Delete "TE:Barbarian - Woodland (Fantasy)"
+#Delete "TE:Barbarian (Fantasy)"
+#Delete "TE:Bard (Fantasy)"
+#Delete "TE:Battle Wizard - Bodyguard - Apportation (Fantasy)"
+#Delete "TE:Battle Wizard - Bodyguard - Aura (Fantasy)"
+#Delete "TE:Battle Wizard - Bodyguard - Emotion (Fantasy)"
+#Delete "TE:Battle Wizard - Bodyguard - Fire (Fantasy)"
+#Delete "TE:Battle Wizard - Kineticist (Fantasy)"
+#Delete "TE:Battle Wizard - Pyrurge (Fantasy)"
+#Delete "TE:Battle Wizard (Fantasy)"
+#Delete "TE:Enchanter - Armour Maker (Fantasy)"
+#Delete "TE:Enchanter - Magical Device Maker (Fantasy)"
+#Delete "TE:Enchanter - Weapon Maker - Accuracy (Fantasy)"
+#Delete "TE:Enchanter - Weapon Maker - Puissance (Fantasy)"
+#Delete "TE:Enchanter (Fantasy)"
+#Delete "TE:Hedge Wizard - Generalist (Fantasy)"
+#Delete "TE:Hedge Wizard - Healer (Fantasy)"
+#Delete "TE:Hedge Wizard - Weatherworker (Fantasy)"
+#Delete "TE:Hedge Wizard (Fantasy)"
+#Delete "TE:Holy Man (Fantasy)"
+#Delete "TE:Knight (Fantasy)"
+#Delete "TE:Merchant (Fantasy)"
+#Delete "TE:Peasant Adventurer (Fantasy)"
+#Delete "TE:Scholar (Fantasy)"
+#Delete "TE:Slayer (Fantasy)"
+#Delete "TE:Spell Caster - Elementalist (Fantasy)"
+#Delete "TE:Spell Caster - Illusionist (Fantasy)"
+#Delete "TE:Spell Caster - Mentalist (Fantasy)"
+#Delete "TE:Spell Caster (Fantasy)"
+#Delete "TE:Thief - Burglary (Fantasy)"
+#Delete "TE:Thief - Cutpurse/Pickpocket (Fantasy)"
+#Delete "TE:Thief - Shoplifter (Fantasy)"
+#Delete "TE:Thief (Fantasy)"
+#Delete "TE:True King (Fantasy)"
+#Delete "TE:Village Sage (Fantasy)"
+#Delete "TE:Wardancer (Fantasy)"
+
+* Racial templates
+#DeleteCat TE, "Racial Templates - Fantasy"
+#Delete "TE:Centaur (Fantasy)"
+#Delete "TE:Devilfish (Fantasy)"
+#Delete "TE:Devilfish - Abyssal (Fantasy)"
+#Delete "TE:Superior Horse (Fantasy)"
+#Delete "TE:Djinni (Fantasy)"
+#Delete "TE:Djinni - Materialized Djinni (Fantasy)"
+#Delete "TE:Dragons (Fantasy)"
+#Delete "TE:Dwarf (Fantasy)"
+#Delete "TE:Elf (Fantasy)"
+#Delete "TE:Faerie (Fantasy)"
+#Delete "TE:Ghoul (Fantasy)"
+#Delete "TE:Ghoul - in Hiding (Fantasy)"
+#Delete "TE:Halfling (Fantasy)"
+#Delete "TE:Imp (Fantasy)"
+#Delete "TE:Myrmidon - Worker (Fantasy)"
+#Delete "TE:Myrmidon - Warrior (Fantasy)"
+#Delete "TE:Orc (Fantasy)"
+#Delete "TE:Selkie - Seal Form (Fantasy)"
+#Delete "TE:Selkie - Human Form (Fantasy)"
+#Delete "TE:Troll - Male (Fantasy)"
+#Delete "TE:Troll - Female (Fantasy)"
+#Delete "TE:Vampire (Fantasy)"
+#Delete "TE:Vampire Mage (Fantasy)"
+#Delete "TE:Werewolf (Fantasy)"
+#Delete "TE:Werewolf - Wolf Form (Fantasy)"
+
+#DeleteCat TE, "Racial Templates - Fantasy - Undead Lenses"
+#Delete "TE:Ancestral Spirit (Fantasy)"
+#Delete "TE:Ghost (Fantasy)"
+#Delete "TE:Lich (Fantasy)"
+#Delete "TE:Wight - Skeletal (Fantasy)"
+#Delete "TE:Wight - Mummified (Fantasy)"
+
+* Martial Arts
+* Martial Arts Templates
+#Delete "TE:Aikido (Martial Arts)"
+#Delete "TE:Aikijutsu (Martial Arts)"
+#Delete "TE:Archery - Kyudo (Martial Arts)"
+#Delete "TE:Archery - Yabusame (Martial Arts)"
+#Delete "TE:Armatura (Martial Arts)"
+#Delete "TE:Armatura Equestris (Martial Arts)"
+#Delete "TE:Armed Styles - Banshay (Martial Arts)"
+#Delete "TE:Bajutsu (Martial Arts)"
+#Delete "TE:Bando - ABA Bando (Martial Arts)"
+#Delete "TE:Bando - Kachin Bando (Martial Arts)"
+#Delete "TE:Boxing (Martial Arts)"
+#Delete "TE:Boxing - Ancient Greek Boxing (Martial Arts)"
+#Delete "TE:Boxing - Bare-Knuckle Boxing (Martial Arts)"
+#Delete "TE:Capoeira (Martial Arts)"
+#Delete "TE:Chin Na (Martial Arts)"
+#Delete "TE:Death Fist (Martial Arts)"
+#Delete "TE:Dragon-Man Kung Fu (Martial Arts)"
+#Delete "TE:Escrima (Martial Arts)"
+#Delete "TE:Fencing - French Smallsword (Martial Arts)"
+#Delete "TE:Fencing - Italian School (Martial Arts)"
+#Delete "TE:Fencing - La Verdadera Destreza (Martial Arts)"
+#Delete "TE:Fencing - Transitional French School (Martial Arts)"
+#Delete "TE:Force-Swordsmanship (Martial Arts)"
+#Delete "TE:Freefighting (Martial Arts)"
+#Delete "TE:Furusiyya (Martial Arts)"
+#Delete "TE:Hapkido (Martial Arts)"
+#Delete "TE:Hoplomachia (Martial Arts)"
+#Delete "TE:Hsing I Chuan (Martial Arts)"
+#Delete "TE:Hung Gar Kung Fu - Tiger-Crane Style (Martial Arts)"
+#Delete "TE:Hwa Rang Do (Martial Arts)"
+#Delete "TE:Jeet Kune Do (Martial Arts)"
+#Delete "TE:Judo (Martial Arts)"
+#Delete "TE:Jujutsu (Martial Arts)"
+#Delete "TE:Jujutsu - Bartitsu (Martial Arts)"
+#Delete "TE:Jujutsu - Brazilian Jiu-jitsu (Martial Arts)"
+#Delete "TE:Kajukenbo (Martial Arts)"
+#Delete "TE:Kalaripayit (Martial Arts)"
+#Delete "TE:Karate - Goju Ryu (Martial Arts)"
+#Delete "TE:Karate - Isshinryu (Martial Arts)"
+#Delete "TE:Karate - Kyokushin (Martial Arts)"
+#Delete "TE:Karate - Shotokan (Martial Arts)"
+#Delete "TE:Karate - Te (Martial Arts)"
+#Delete "TE:Kempo (Martial Arts)"
+#Delete "TE:Kenjutsu (Martial Arts)"
+#Delete "TE:Kenjutsu - Iaido (Martial Arts)"
+#Delete "TE:Kenjutsu - Iaijutsu (Martial Arts)"
+#Delete "TE:Kenjutsu - Kendo (Martial Arts)"
+#Delete "TE:Kenjutsu - Kendo - Nito Ryu (Martial Arts)"
+#Delete "TE:Kenjutsu - Nito Ryu (Martial Arts)"
+#Delete "TE:Knightly Mounted Combat - Early Medieval (Martial Arts)"
+#Delete "TE:Knightly Mounted Combat - High Medieval (Martial Arts)"
+#Delete "TE:Knightly Mounted Combat - Late Medieval (Martial Arts)"
+#Delete "TE:Kobujutsu (Martial Arts)"
+#Delete "TE:Krabi Krabong (Martial Arts)"
+#Delete "TE:Kuntao (Martial Arts)"
+#Delete "TE:Kusarigamajutsu (Martial Arts)"
+#Delete "TE:Kusarijutsu (Martial Arts)"
+#Delete "TE:Kyujutsu (Martial Arts)"
+#Delete "TE:Lethwei (Martial Arts)"
+#Delete "TE:Longsword Fighting (Martial Arts)"
+#Delete "TE:Masters of Defence Weapon Training (Martial Arts)"
+#Delete "TE:Military Hand-To-Hand - Fairbairn Close Combat Training (Martial Arts)"
+#Delete "TE:Military Hand-To-Hand - Krav Maga (Martial Arts)"
+#Delete "TE:Military Hand-To-Hand - MCMAP - U.S. Marine Corps Martial Arts Program (Martial Arts)"
+#Delete "TE:Military Hand-To-Hand - Sambo (Martial Arts)"
+#Delete "TE:Muay Thai (Martial Arts)"
+#Delete "TE:Naginatajutsu (Martial Arts)"
+#Delete "TE:Pa Kua Chuan (Martial Arts)"
+#Delete "TE:Pak Hok (Martial Arts)"
+#Delete "TE:Pentjak Silat - Kumango Silat (Martial Arts)"
+#Delete "TE:Pentjak Silat - Tapak Sutji Pentjak Silat (Martial Arts)"
+#Delete "TE:Polearm Fighting - Chinese Horse-Cutter Fighting (Martial Arts)"
+#Delete "TE:Polearm Fighting - Glaive Fighting (Martial Arts)"
+#Delete "TE:Polearm Fighting - Naginatado/Atarashii Naginata (Martial Arts)"
+#Delete "TE:Pollaxe Fighting (Martial Arts)"
+#Delete "TE:Praying Mantis Kung Fu (Martial Arts)"
+#Delete "TE:Savate (Martial Arts)"
+#Delete "TE:Savate - La Boxe Française (Martial Arts)"
+#Delete "TE:Shaolin Kung Fu (Martial Arts)"
+#Delete "TE:Shortsword Fighting (Martial Arts)"
+#Delete "TE:Shurikenjutsu (Martial Arts)"
+#Delete "TE:Sojutsu (Martial Arts)"
+#Delete "TE:Spear Fighting - Chinese Spear Fighting (Martial Arts)"
+#Delete "TE:Spear Fighting - Heroic Spear Fighting (Martial Arts)"
+#Delete "TE:Spear Fighting - Iklwa Fighting (Martial Arts)"
+#Delete "TE:Spear Fighting - Jukenjutsu (Bayonet Fighting)"
+#Delete "TE:Spear Fighting - Viking Spear Fighting (Martial Arts)"
+#Delete "TE:Sport Fencing - Foil (Martial Arts)"
+#Delete "TE:Sport Fencing - Saber (Martial Arts)"
+#Delete "TE:Sport Fencing - Schläger (Martial Arts)"
+#Delete "TE:Sport Fencing - Épée (Martial Arts)"
+#Delete "TE:Staff Fighting - Bojutsu (Martial Arts)"
+#Delete "TE:Staff Fighting - Jojutsu (Martial Arts)"
+#Delete "TE:Staff Fighting - Sport Quarterstaff (Martial Arts)"
+#Delete "TE:Stickfighting - African Stickfighting (Martial Arts)"
+#Delete "TE:Stickfighting - La Canne de Combat (Martial Arts)"
+#Delete "TE:Stickfighting - Victorian Singlestick (Martial Arts)"
+#Delete "TE:Sumo (Martial Arts)"
+#Delete "TE:Sword-and-Buckler Play (Martial Arts)"
+#Delete "TE:T'ai Chi (Martial Arts)"
+#Delete "TE:T'ai Chi Chuan (Martial Arts)"
+#Delete "TE:Tae Kwon Do (Martial Arts)"
+#Delete "TE:Taihojutsu (Martial Arts)"
+#Delete "TE:Taijutsu (Martial Arts)"
+#Delete "TE:Wing Chun (Martial Arts)"
+#Delete "TE:Wrestling - Greco-Roman Wrestling (Martial Arts)"
+#Delete "TE:Wrestling - Indian Wrestling (Martial Arts)"
+#Delete "TE:Wrestling - Professional Wrestling (Martial Arts)"
+#Delete "TE:Wrestling - Submission Wrestling (Martial Arts)"
+#Delete "TE:Wushu (Martial Arts)"
+
+<Character Templates>
+
+<Racial Templates>
+
+Exalted Raven, displaycost(20), cost(-10),
+    description(An exceptionally intelligent raven.),
+    race(Raven),
+    owns(yes),
+    locks(yes),
+    gives(_
+        -5 to ST:ST,
+        +1 to ST:DX,
+        +4 to ST:HT,
+        -4 to ST:Basic Move,
+        -3 to ST:Size Modifier),
+    creates(),
+    adds(_
+        AD:Acute Vision=2,
+        AD:Claws (Sharp Claws),
+        AD:Enhanced Move (Air)=1,
+        AD:Flight with "Winged, -25%, group(Flight)",
+        AD:Mimicry,
+        AD:Teeth (Sharp Beak),
+        DI:Disturbing Voice,
+        DI:One Arm),
+    features()
+
+Great Cat, displaycost(75), cost(110),
+    description(Large wild feline with a human soul.),
+    race(Great Cat),
+    owns(yes),
+    locks(yes),
+    gives(_
+        +5 to ST:ST,
+        +2 to ST:DX,
+        +1 to ST:HT,
+        +2 to ST:Perception,
+        +4 to ST:Basic Move),
+    creates(),
+    adds(_
+        TE:Quadruped,
+        AD:Claws (Sharp Claws),
+        AD:Damage Resistance=1 with "Can't Wear Armor, -40%, group(Damage Resistance)",
+        AD:Night Vision=5,
+        AD:Teeth (Sharp Teeth),
+        AD:Temperature Tolerance,
+        DI:Cannot Speak),
+    features(Tail)
+
+Great Horse, displaycost(45), cost(59),
+    description(Horse with a human soul.),
+    race(Great Horse),
+    owns(yes),
+    locks(yes),
+    gives(_
+        +8 to ST:ST,
+        +1 to ST:HT,
+        +1 to ST:Size Modifier,
+        +1 to ST:Basic Move,
+        +2 to SK:Mount),
+    creates(),
+    adds(_
+        TE:Quadruped,
+        AD:Claws (Hooves),
+        AD:Enhanced Move (Ground)=2,
+        AD:Peripheral Vision,
+        DI:Cannot Speak,
+        DI:Weak Bite),
+    features(Tail)
+
+Windrider, displaycost(40), cost(30),
+    description(Humans modified in the distant past by magicians to have wings.),
+    race(Windrider),
+    owns(yes),
+    locks(yes),
+    gives(_
+        +1 to ST:ST,
+        +1 to ST:DX),
+    creates(),
+    adds(_
+        AD:Acute Vision=5,
+        AD:Flight with "Winged, -25%, group(Flight)",
+        DI:Vulnerability (Crushing)=3 with "Wounding Multiplier x2, *1, group(Vulnerability)"),
+    features()
+
+********************************************************************************
+[Equipment]
+********************************************************************************
+
+<Clothing>
+
+<Animals>
+
+<Miscellaneous Equipment - Camping & Survival Gear>
+
+<Miscellaneous Equipment - Communications & Information Gear>
+
+<Animals - Equestrian Gear>
+
+<Miscellaneous Equipment - Law-Enforcement¸ Thief¸ & Spy Gear>
+
+<Miscellaneous Equipment - Medical Gear>
+
+<Miscellaneous Equipment - Optics & Sensors>
+
+<Miscellaneous Equipment - Tools>
+
+<Miscellaneous Equipment - Weapon & Combat Accessories>
+
+<Animals - Horse Armor (Barding)>
+
+<Armor - Low Tech Body Armor>
+
+<Armor - Low Tech Limb Armor>
+
+<Armor - Low Tech Headgear>
+
+<Armor - Low Tech Gloves & Footwear>
+
+<Vehicles - Ground>
+
+<Vehicles - Watercraft>
+
+<Vehicles - Aircraft>
+
+<Firearms - Pistols & SMGs>
+
+<Firearms - Rifles & Shotguns>
+
+<Heavy Weapons>
+
+<Shields>
+
+<Melee Weapons>
+
+<Muscle-Powered Ranged Weapons>
+
+<Hand Grenades & Incendiaries>
+
+<Natural Attacks>
+
+<Valuables>

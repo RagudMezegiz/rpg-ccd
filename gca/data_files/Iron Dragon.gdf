@@ -1,0 +1,1837 @@
+Version=3
+* The version information above MUST be the first line of the data file
+Description=This file contains data for the Iron Dragon campaign.
+WorldBook=Iron Dragon
+Requires="GURPS Basic Set 4th Ed.--Characters.gdf", "GURPS Fantasy 4e.gdf", "GURPS Magic 4e.gdf"
+LoadAfter=All
+
+[AUTHOR]
+********************************************************************************
+*
+* GURPS(R) Character Assistant
+* Filename: Iron Dragon.gdf
+* Created: August 2, 2005
+* Modified: March 16, 2014
+* Requires GCA v4 or later!
+*
+* Information in this file includes:
+*    Advantages, Perks, Disadvantages, Quirks, Including Bonuses and Penalties.
+*    Skills, Including Bonuses, Classes, Needs and Prereqs.
+*    Spells, Including Bonuses, Colleges, Needs and Prereqs.
+*    Equipment
+*    Templates
+*
+********************************************************************************
+*
+* Dave Terhune
+*
+* If you find any errors or ommissions in this file please contact the author at:
+* dave.terhune@gmail.com
+*
+********************************************************************************
+*
+* GURPS is a registered trademark of Steve Jackson Games Incorporated, used with
+* GCA by permission of Steve Jackson Games. All rights reserved.
+*
+* The GURPS game is copyright (c) 1986-1989, 1991-1994 by Steve Jackson Games
+* Incorporated. This product includes copyrighted material from the GURPS game,
+* which is used by permission of Steve Jackson Games Incorporated. All rights
+* reserved by Steve Jackson Games Incorporated.
+*
+********************************************************************************
+
+********************************************************************************
+[Advantages]
+********************************************************************************
+
+* Delete Advantages not applicable or available
+#Delete "AD:G-Experience"
+#Delete "AD:Improved G-Tolerance"
+#Delete "AD:Digital Mind"
+#Delete "AD:Modular Abilities (Chip Slots)"
+#Delete "AD:Modular Abilities (Computer Brain)"
+#Delete "AD:Telecommunication (Infrared Communication)"
+#Delete "AD:Telecommunication (Laser Communication)"
+#Delete "AD:Telecommunication (Radio)"
+
+<General>
+
+<Exotic Physical>
+
+<Exotic Mental>
+
+<Paranormal Physical>
+
+<Paranormal Mental>
+
+* God-specific Power Investiture advantages
+Power Investiture (Aboshan), 10/20, page(B77), gives(+1 to CO:Aboshan), cat(Paranormal, Mental), needs()
+Power Investiture (Alexi), 10/20, page(B77), gives(+1 to CO:Alexi), cat(Paranormal, Mental), needs()
+Power Investiture (Amrou), 10/20, page(B77), gives(+1 to CO:Amrou), cat(Paranormal, Mental), needs()
+Power Investiture (Jasmine), 10/20, page(B77), gives(+1 to CO:Jasmine), cat(Paranormal, Mental), needs()
+Power Investiture (Johan), 10/20, page(B77), gives(+1 to CO:Johan), cat(Paranormal, Mental), needs()
+Power Investiture (Jolrael), 10/20, page(B77), gives(+1 to CO:Jolrael), cat(Paranormal, Mental), needs()
+Power Investiture (Joven), 10/20, page(B77), gives(+1 to CO:Joven), cat(Paranormal, Mental), needs()
+Power Investiture (Kaledor), 10/20, page(B77), gives(+1 to CO:Kaledor), cat(Paranormal, Mental), needs()
+Power Investiture (Karona), 10/20, page(B77), gives(+1 to CO:Karona), cat(Paranormal, Mental), needs()
+Power Investiture (Kaysa), 10/20, page(B77), gives(+1 to CO:Kaysa), cat(Paranormal, Mental), needs()
+Power Investiture (Keldon), 10/20, page(B77), gives(+1 to CO:Keldon), cat(Paranormal, Mental), needs(DI:Discipline of Faith (Ritualism))
+Power Investiture (Plutus), 10/20, page(B77), gives(+1 to CO:Plutus), cat(Paranormal, Mental), needs(DI:Discipline of Faith (Iconism))
+Power Investiture (Rubinia), 10/20, page(B77), gives(+1 to CO:Rubinia), cat(Paranormal, Mental), needs(DI:Code of Honor (Rubinia Soulsinger))
+Power Investiture (Shauku), 10/20, page(B77), gives(+1 to CO:Shauku), cat(Paranormal, Mental), needs()
+
+<Mundane Physical>
+
+<Mundane Mental>
+
+<Mundane Social>
+
+* Cultural Familiarities
+Cat Folk, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Durish, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Dwarf, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Elf, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Imperial, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Orc, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Sea Folk, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Vampire, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+Wee Folk, 1, page(B23), cat(Mundane, Social, Cultural Familiarity, Social Background)
+
+* Languages
+Arcane (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Arcane (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Caetish (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Caetish (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Durish (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Dwarvish (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Dwarvish (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Elvish (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Elvish (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Imperial (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Imperial (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Orcish (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Orcish (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Sea Folk (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Sea Folk (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+
+********************************************************************************
+[Perks]
+********************************************************************************
+<Perks>
+
+********************************************************************************
+[Disadvantages]
+********************************************************************************
+
+* Delete Disadvantages not applicable or available
+#Delete "DI:Space Sickness"
+
+<General>
+
+<Exotic Physical>
+
+<Exotic Mental>
+
+<Paranormal Physical>
+
+<Paranormal Mental>
+
+<Mundane Physical>
+
+<Mundane Mental>
+Code of Honor (Rubinia Soulsinger), -5, page(B127), cat(Mundane, Mental)
+Discipline of Faith (Iconism), -10, page(B132), cat(Mundane, Mental)
+
+<Mundane Social>
+
+********************************************************************************
+[QUIRKS]
+********************************************************************************
+<General>
+
+<Mental>
+
+<Physical>
+
+********************************************************************************
+[SKILLS]
+********************************************************************************
+
+* Delete Skills not applicable or available
+#Delete "SK:Armoury (Battlesuits)"
+#Delete "SK:Armoury (Force Shields)"
+#Delete "SK:Artillery (Beams)"
+#Delete "SK:Artillery (Guided Missile)"
+#Delete "SK:Artillery (Torpedoes)"
+#Delete "SK:Battlesuit"
+#Delete "SK:Beam Weapons (Pistol)"
+#Delete "SK:Beam Weapons (Projector)"
+#Delete "SK:Beam Weapons (Rifle)"
+#Delete "SK:Bioengineering (Cloning)"
+#Delete "SK:Bioengineering (Genetic Engineering)"
+#Delete "SK:Bioengineering (Tissue Engineering)"
+#Delete "SK:Biology (Gas Giants)"
+#Delete "SK:Biology (Hostile Terrestrial)"
+#Delete "SK:Biology (Ice Dwarfs)"
+#Delete "SK:Biology (Ice Worlds)"
+#Delete "SK:Biology (Rock Worlds)"
+#Delete "SK:Boating (Large Powerboat)"
+#Delete "SK:Boating (Motorboat)"
+#Delete "SK:Computer Hacking"
+#Delete "SK:Computer Operation"
+#Delete "SK:Computer Programming"
+#Delete "SK:Driving (Automobile)"
+#Delete "SK:Driving (Construction Equipment)"
+#Delete "SK:Driving (Halftrack)"
+#Delete "SK:Driving (Heavy Wheeled)"
+#Delete "SK:Driving (Hovercraft)"
+#Delete "SK:Driving (Mecha)"
+#Delete "SK:Driving (Motorcycle)"
+#Delete "SK:Driving (Tracked)"
+#Delete "SK:Electrician"
+#Delete "SK:Electronics Operation (Communications)"
+#Delete "SK:Electronics Operation (Electronic Warfare)"
+#Delete "SK:Electronics Operation (Force Shields)"
+#Delete "SK:Electronics Operation (Matter Transmitters)"
+#Delete "SK:Electronics Operation (Media)"
+#Delete "SK:Electronics Operation (Medical)"
+#Delete "SK:Electronics Operation (Parachronic)"
+#Delete "SK:Electronics Operation (Psychotronics)"
+#Delete "SK:Electronics Operation (Scientific)"
+#Delete "SK:Electronics Operation (Security)"
+#Delete "SK:Electronics Operation (Sensors)"
+#Delete "SK:Electronics Operation (Sonar)"
+#Delete "SK:Electronics Operation (Surveillance)"
+#Delete "SK:Electronics Operation (Temporal)"
+#Delete "SK:Electronics Repair (Communications)"
+#Delete "SK:Electronics Repair (Computers)"
+#Delete "SK:Electronics Repair (Electronic Warfare)"
+#Delete "SK:Electronics Repair (Force Shields)"
+#Delete "SK:Electronics Repair (Matter Transmitters)"
+#Delete "SK:Electronics Repair (Media)"
+#Delete "SK:Electronics Repair (Medical)"
+#Delete "SK:Electronics Repair (Parachronic)"
+#Delete "SK:Electronics Repair (Psychotronics)"
+#Delete "SK:Electronics Repair (Scientific)"
+#Delete "SK:Electronics Repair (Security)"
+#Delete "SK:Electronics Repair (Sensors)"
+#Delete "SK:Electronics Repair (Sonar)"
+#Delete "SK:Electronics Repair (Surveillance)"
+#Delete "SK:Electronics Repair (Temporal)"
+#Delete "SK:Engineer (Electrical)"
+#Delete "SK:Engineer (Electronics)"
+#Delete "SK:Engineer (Microtechnology)"
+#Delete "SK:Engineer (Nanotechnology)"
+#Delete "SK:Engineer (Parachronic)"
+#Delete "SK:Engineer (Psychotronics)"
+#Delete "SK:Engineer (Temporal)"
+#Delete "SK:Expert Skill (Computer Security)"
+#Delete "SK:Expert Skill (Egyptology)"
+#Delete "SK:Expert Skill (Psionics)"
+#Delete "SK:Explosives (Nuclear Ordnance Disposal)"
+#Delete "SK:Fast-Draw (Force Sword)"
+#Delete "SK:Force Sword"
+#Delete "SK:Force Sword Art"
+#Delete "SK:Force Sword Sport"
+#Delete "SK:Force Whip"
+#Delete "SK:Force Whip Art"
+#Delete "SK:Force Whip Sport"
+#Delete "SK:Geography (Gas Giants)"
+#Delete "SK:Geography (Hostile Terrestrial)"
+#Delete "SK:Geography (Ice Dwarfs)"
+#Delete "SK:Geography (Ice Worlds)"
+#Delete "SK:Geography (Rock Worlds)"
+#Delete "SK:Geology (Gas Giants)"
+#Delete "SK:Geology (Hostile Terrestrial)"
+#Delete "SK:Geology (Ice Dwarfs)"
+#Delete "SK:Geology (Ice Worlds)"
+#Delete "SK:Geology (Rock Worlds)"
+#Delete "SK:Gunner (Beams)"
+#Delete "SK:Gunner (Machine Gun)"
+#Delete "SK:Guns (Grenade Launcher)"
+#Delete "SK:Guns (Gyroc)"
+#Delete "SK:Guns (Light Anti-Armor Weapon)"
+#Delete "SK:Guns (Light Machine Gun)"
+#Delete "SK:Guns (Rifle)"
+#Delete "SK:Guns (Submachine Gun)"
+#Delete "SK:Liquid Projector (Sprayer)"
+#Delete "SK:Liquid Projector (Squirt Gun)"
+#Delete "SK:Liquid Projector (Water Cannon)"
+#Delete "SK:Market Analysis"
+#Delete "SK:Mathematics (Computer Science)"
+#Delete "SK:Mechanic (Micromachines)"
+#Delete "SK:Mechanic (Nanomachines)"
+#Delete "SK:Meteorology (Gas Giants)"
+#Delete "SK:Meteorology (Hostile Terrestrial)"
+#Delete "SK:Meteorology (Ice Dwarfs)"
+#Delete "SK:Meteorology (Ice Worlds)"
+#Delete "SK:Meteorology (Rock Worlds)"
+#Delete "SK:Monowire Whip"
+#Delete "SK:Monowire Whip Art"
+#Delete "SK:Monowire Whip Sport"
+#Delete "SK:Navigation (Hyperspace)"
+#Delete "SK:Navigation (Space)"
+#Delete "SK:NBC Suit"
+#Delete "SK:Paleontology (Micropaleontology)"
+#Delete "SK:Parachuting"
+#Delete "SK:Pharmacy (Synthetic)"
+#Delete "SK:Photography"
+#Delete "SK:Piloting (Aerospace)"
+#Delete "SK:Piloting (Autogyro)"
+#Delete "SK:Piloting (Flight Pack)"
+#Delete "SK:Piloting (Heavy Airplane)"
+#Delete "SK:Piloting (Helicopter)"
+#Delete "SK:Piloting (High-Performance Airplane)"
+#Delete "SK:Piloting (High-Performance Spacecraft)"
+#Delete "SK:Piloting (Light Airplane)"
+#Delete "SK:Piloting (Lightsail)"
+#Delete "SK:Piloting (Low-G Wings)"
+#Delete "SK:Piloting (Low-Performance Spacecraft)"
+#Delete "SK:Piloting (Ultralight)"
+#Delete "SK:Piloting (Vertol)"
+#Delete "SK:Scuba"
+#Delete "SK:Shield (Force)"
+#Delete "SK:Shiphandling (Spaceship)"
+#Delete "SK:Shiphandling (Starship)"
+#Delete "SK:Spacer"
+#Delete "SK:Strategy (Interstellar)"
+#Delete "SK:Strategy (Space)"
+#Delete "SK:Submarine (Free-Flooding Sub)"
+#Delete "SK:Submarine (Large Sub)"
+#Delete "SK:Submarine (Mini-Sub)"
+#Delete "SK:Submariner"
+#Delete "SK:Survival (Radioactive Wasteland)"
+
+* Delete Techniques not applicable or available
+#Delete "SK:Motion-Picture Camera (Photography)"
+#Delete "SK:No-Landing Extraction (Piloting (Aerospace))"
+#Delete "SK:No-Landing Extraction (Piloting (Autogyro))"
+#Delete "SK:No-Landing Extraction (Piloting (Flight Pack))"
+#Delete "SK:No-Landing Extraction (Piloting (Heavy Airplane))"
+#Delete "SK:No-Landing Extraction (Piloting (Helicopter))"
+#Delete "SK:No-Landing Extraction (Piloting (High-Performance Airplane))"
+#Delete "SK:No-Landing Extraction (Piloting (High-Performance Spacecraft))"
+#Delete "SK:No-Landing Extraction (Piloting (Light Airplane))"
+#Delete "SK:No-Landing Extraction (Piloting (Lightsail))"
+#Delete "SK:No-Landing Extraction (Piloting (Low-G Wings))"
+#Delete "SK:No-Landing Extraction (Piloting (Low-Performance Spacecraft))"
+#Delete "SK:No-Landing Extraction (Piloting (Ultralight))"
+#Delete "SK:No-Landing Extraction (Piloting (Vertol))"
+#Delete "SK:Slip Handcuffs (Escape)"
+
+<Animal>
+
+<Arts/Entertainment>
+
+<Athletic>
+
+<Athletic - Combat Art/Sport>
+
+<Business>
+
+<Combat/Weapons - Melee Combat>
+
+<Combat/Weapons - Ranged Combat>
+
+<Craft>
+
+<Criminal/Street>
+
+<Design/Invention>
+
+<Esoteric>
+
+<Everyman>
+
+<Knowledge>
+
+<Medical>
+
+<Military>
+
+<Natural Sciences>
+
+<Occult/Magical>
+
+<Outdoor/Exploration>
+Survival (Underground), Per/A, default(Per - 5, SK:Naturalist - 3, "SK:Survival (Mountain)" - 3), page(B223), cat(_General, Outdoor/Exploration)
+
+<Plant>
+
+<Police>
+
+<Repair/Maintenance>
+
+<Scholarly>
+
+<Social>
+
+<Social Sciences/Humanities>
+
+<Spy>
+
+<Symbol Magic>
+
+* Dwarf Runecasting
+#Clone SK:Symbol Drawing as SK:Symbol Drawing (Dwarf)
+
+#Clone SK:Food as SK:Food (Dwarf)
+#Clone SK:Sound as SK:Sound (Dwarf)
+#Clone SK:Communicate as SK:Communicate (Dwarf)
+#Clone SK:Weaken as SK:Weaken (Dwarf)
+#Clone SK:Strengthen as SK:Strengthen (Dwarf)
+#Clone SK:Move as SK:Move (Dwarf)
+#Clone SK:Protect as SK:Protect (Dwarf)
+#Clone SK:Air as SK:Air (Dwarf)
+#Clone SK:Fire as SK:Fire (Dwarf)
+#Clone SK:Image as SK:Image (Dwarf)
+#Clone SK:Light as SK:Light (Dwarf)
+#Clone SK:Plant as SK:Plant (Dwarf)
+#Clone SK:Water as SK:Water (Dwarf)
+#Clone SK:Heal as SK:Heal (Dwarf)
+#Clone SK:Sense as SK:Sense (Dwarf)
+#Clone SK:Create as SK:Create (Dwarf)
+#Clone SK:Control as SK:Control (Dwarf)
+#Clone SK:Transform as SK:Transform (Dwarf)
+#Clone SK:Animal as SK:Animal (Dwarf)
+#Clone SK:Body as SK:Body (Dwarf)
+#Clone SK:Earth as SK:Earth (Dwarf)
+#Clone SK:Magic as SK:Magic (Dwarf)
+#Clone SK:Mind as SK:Mind (Dwarf)
+#Clone SK:Spirit as SK:Spirit (Dwarf)
+
+#ReplaceTags in SK:Food (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Sound (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Communicate (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Weaken (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Strengthen (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Move (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Protect (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Air (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Fire (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Image (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Light (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Plant (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Water (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Heal (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Sense (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Create (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Control (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Transform (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Animal (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Body (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Earth (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Magic (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Mind (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+#ReplaceTags in SK:Spirit (Dwarf) with needs(SK:Symbol Drawing (Dwarf))
+
+* Sea Folk Runecasting
+#Clone SK:Symbol Drawing as SK:Symbol Drawing (Sea Folk)
+
+#Clone SK:Food as SK:Food (Sea Folk)
+#Clone SK:Sound as SK:Sound (Sea Folk)
+#Clone SK:Communicate as SK:Communicate (Sea Folk)
+#Clone SK:Weaken as SK:Weaken (Sea Folk)
+#Clone SK:Strengthen as SK:Strengthen (Sea Folk)
+#Clone SK:Move as SK:Move (Sea Folk)
+#Clone SK:Protect as SK:Protect (Sea Folk)
+#Clone SK:Air as SK:Air (Sea Folk)
+#Clone SK:Fire as SK:Fire (Sea Folk)
+#Clone SK:Image as SK:Image (Sea Folk)
+#Clone SK:Light as SK:Light (Sea Folk)
+#Clone SK:Plant as SK:Plant (Sea Folk)
+#Clone SK:Water as SK:Water (Sea Folk)
+#Clone SK:Heal as SK:Heal (Sea Folk)
+#Clone SK:Sense as SK:Sense (Sea Folk)
+#Clone SK:Create as SK:Create (Sea Folk)
+#Clone SK:Control as SK:Control (Sea Folk)
+#Clone SK:Transform as SK:Transform (Sea Folk)
+#Clone SK:Animal as SK:Animal (Sea Folk)
+#Clone SK:Body as SK:Body (Sea Folk)
+#Clone SK:Earth as SK:Earth (Sea Folk)
+#Clone SK:Magic as SK:Magic (Sea Folk)
+#Clone SK:Mind as SK:Mind (Sea Folk)
+#Clone SK:Spirit as SK:Spirit (Sea Folk)
+
+#ReplaceTags in SK:Food (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Sound (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Communicate (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Weaken (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Strengthen (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Move (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Protect (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Air (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Fire (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Image (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Light (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Plant (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Water (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Heal (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Sense (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Create (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Control (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Transform (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Animal (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Body (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Earth (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Magic (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Mind (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+#ReplaceTags in SK:Spirit (Sea Folk) with needs(SK:Symbol Drawing (Sea Folk))
+
+* Delete unspecialized Runecasting skills
+#Delete "SK:Symbol Drawing"
+#Delete "SK:Food"
+#Delete "SK:Sound"
+#Delete "SK:Communicate"
+#Delete "SK:Weaken"
+#Delete "SK:Strengthen"
+#Delete "SK:Move"
+#Delete "SK:Protect"
+#Delete "SK:Air"
+#Delete "SK:Fire"
+#Delete "SK:Image"
+#Delete "SK:Light"
+#Delete "SK:Plant"
+#Delete "SK:Water"
+#Delete "SK:Heal"
+#Delete "SK:Sense"
+#Delete "SK:Create"
+#Delete "SK:Control"
+#Delete "SK:Transform"
+#Delete "SK:Animal"
+#Delete "SK:Body"
+#Delete "SK:Earth"
+#Delete "SK:Magic"
+#Delete "SK:Mind"
+#Delete "SK:Spirit"
+
+<Technical>
+
+<Vehicle>
+
+<Combat Techniques>
+
+<Noncombat Techniques>
+
+<Wildcard!>
+
+********************************************************************************
+[SPELLS]
+********************************************************************************
+
+* Delete Spells not applicable or available
+#Delete "SP:Awaken Computer"
+#Delete "SP:Radio Hearing"
+#Delete "SP:See Radiation"
+#Delete "SP:Seek Radiation"
+#Delete "SP:Irradiate"
+#Delete "SP:Extinguish Radiation"
+#Delete "SP:Resist Radiation"
+#Delete "SP:Cure Radiation"
+#Delete "SP:Radiation Jet"
+#Delete "SP:Breathe Radiation"
+#Delete "SP:Seek Plastic"
+#Delete "SP:Identify Plastic"
+#Delete "SP:Shape Plastic"
+#Delete "SP:Plastic Vision"
+#Delete "SP:Body of Plastic"
+#DeleteCat SP, "Syntactic"
+#Delete "SP:Communicate (Verb)"
+#Delete "SP:Control (Verb)"
+#Delete "SP:Create (Verb)"
+#Delete "SP:Heal (Verb)"
+#Delete "SP:Move (Verb)"
+#Delete "SP:Protect (Verb)"
+#Delete "SP:Sense (Verb)"
+#Delete "SP:Strengthen (Verb)"
+#Delete "SP:Transform (Verb)"
+#Delete "SP:Weaken (Verb)"
+#Delete "SP:Air (Noun)"
+#Delete "SP:Animal (Noun)"
+#Delete "SP:Body (Noun)"
+#Delete "SP:Earth (Noun)"
+#Delete "SP:Fire (Noun)"
+#Delete "SP:Food (Noun)"
+#Delete "SP:Image (Noun)"
+#Delete "SP:Light (Noun)"
+#Delete "SP:Magic (Noun)"
+#Delete "SP:Mind (Noun)"
+#Delete "SP:Plant (Noun)"
+#Delete "SP:Sound (Noun)"
+#Delete "SP:Spirit (Noun)"
+#Delete "SP:Water (Noun)"
+
+<Aboshan>
+
+<Alexi>
+
+<Amrou>
+
+<Jasmine>
+
+<Johan>
+
+<Jolrael>
+
+<Joven>
+
+<Kaledor>
+
+<Karona>
+
+<Kaysa>
+
+<Keldon>
+#Clone SP:Might as SP:Might (Keldon)
+#ReplaceTags in SP:Might (Keldon) with needs(AD:Power Investiture (Keldon)), cat(Keldon)
+
+<Plutus>
+
+<Rubinia>
+
+<Shauku>
+
+********************************************************************************
+[GROUPS]
+********************************************************************************
+
+********************************************************************************
+[Modifiers]
+********************************************************************************
+
+********************************************************************************
+[Templates]
+********************************************************************************
+
+* First, remove templates that we don't want to appear in the list.
+
+* Basic Set
+* Character templates
+#Delete "TE:Investigator (Basic Set)"
+#Delete "TE:Mage (Basic Set)"
+#Delete "TE:Heroic Knight (Basic Set)"
+#Delete "TE:Warrior (Basic Set)"
+#Delete "TE:Warrior - Heroic (Basic Set)"
+#Delete "TE:Warrior - Knight (Basic Set)"
+#Delete "TE:Soldier of Fortune (Basic Set)"
+
+* Racial templates
+#Delete "TE:Dragon (Basic Set)"
+#Delete "TE:Dwarf (Basic Set)"
+#Delete "TE:Felinoid (Basic Set)"
+#Delete "TE:Vampire (Basic Set)"
+#Delete "TE:Elf (Basic Set)"
+
+* Meta-traits
+#Delete "TE:Machine"
+#Delete "TE:AI"
+
+* Fantasy
+* Character templates
+#DeleteCat TE, "Character Templates - Fantasy"
+#Delete "TE:Archer - Bowman (Fantasy)"
+#Delete "TE:Archer - Crossbowman (Fantasy)"
+#Delete "TE:Archer - Rifleman (Fantasy)"
+#Delete "TE:Archer - Slingman (Fantasy)"
+#Delete "TE:Archer - Spearman (Fantasy)"
+#Delete "TE:Archer (Fantasy)"
+#Delete "TE:Artificer - Artillery (Fantasy)"
+#Delete "TE:Artificer - Chemistry (Fantasy)"
+#Delete "TE:Artificer - Heavy Equipment (Fantasy)"
+#Delete "TE:Artificer - Mechanisms (Fantasy)"
+#Delete "TE:Artificer (Fantasy)"
+#Delete "TE:Assassin (Fantasy)"
+#Delete "TE:Bandit (Fantasy)"
+#Delete "TE:Barbarian - Desert (Fantasy)"
+#Delete "TE:Barbarian - Plains (Fantasy)"
+#Delete "TE:Barbarian - Seafaring (Fantasy)"
+#Delete "TE:Barbarian - Woodland (Fantasy)"
+#Delete "TE:Barbarian (Fantasy)"
+#Delete "TE:Bard (Fantasy)"
+#Delete "TE:Battle Wizard - Bodyguard - Apportation (Fantasy)"
+#Delete "TE:Battle Wizard - Bodyguard - Aura (Fantasy)"
+#Delete "TE:Battle Wizard - Bodyguard - Emotion (Fantasy)"
+#Delete "TE:Battle Wizard - Bodyguard - Fire (Fantasy)"
+#Delete "TE:Battle Wizard - Kineticist (Fantasy)"
+#Delete "TE:Battle Wizard - Pyrurge (Fantasy)"
+#Delete "TE:Battle Wizard (Fantasy)"
+#Delete "TE:Enchanter - Armour Maker (Fantasy)"
+#Delete "TE:Enchanter - Magical Device Maker (Fantasy)"
+#Delete "TE:Enchanter - Weapon Maker - Accuracy (Fantasy)"
+#Delete "TE:Enchanter - Weapon Maker - Puissance (Fantasy)"
+#Delete "TE:Enchanter (Fantasy)"
+#Delete "TE:Hedge Wizard - Generalist (Fantasy)"
+#Delete "TE:Hedge Wizard - Healer (Fantasy)"
+#Delete "TE:Hedge Wizard - Weatherworker (Fantasy)"
+#Delete "TE:Hedge Wizard (Fantasy)"
+#Delete "TE:Holy Man (Fantasy)"
+#Delete "TE:Knight (Fantasy)"
+#Delete "TE:Merchant (Fantasy)"
+#Delete "TE:Peasant Adventurer (Fantasy)"
+#Delete "TE:Scholar (Fantasy)"
+#Delete "TE:Slayer (Fantasy)"
+#Delete "TE:Spell Caster - Elementalist (Fantasy)"
+#Delete "TE:Spell Caster - Illusionist (Fantasy)"
+#Delete "TE:Spell Caster - Mentalist (Fantasy)"
+#Delete "TE:Spell Caster (Fantasy)"
+#Delete "TE:Thief - Burglary (Fantasy)"
+#Delete "TE:Thief - Cutpurse/Pickpocket (Fantasy)"
+#Delete "TE:Thief - Shoplifter (Fantasy)"
+#Delete "TE:Thief (Fantasy)"
+#Delete "TE:True King (Fantasy)"
+#Delete "TE:Village Sage (Fantasy)"
+#Delete "TE:Wardancer (Fantasy)"
+
+* Racial templates
+#DeleteCat TE, "Racial Templates - Fantasy"
+#Delete "TE:Centaur (Fantasy)"
+#Delete "TE:Devilfish (Fantasy)"
+#Delete "TE:Devilfish - Abyssal (Fantasy)"
+#Delete "TE:Superior Horse (Fantasy)"
+#Delete "TE:Djinni (Fantasy)"
+#Delete "TE:Djinni - Materialized Djinni (Fantasy)"
+#Delete "TE:Dragons (Fantasy)"
+#Delete "TE:Dwarf (Fantasy)"
+#Delete "TE:Elf (Fantasy)"
+#Delete "TE:Faerie (Fantasy)"
+#Delete "TE:Ghoul (Fantasy)"
+#Delete "TE:Ghoul - in Hiding (Fantasy)"
+#Delete "TE:Halfling (Fantasy)"
+#Delete "TE:Imp (Fantasy)"
+#Delete "TE:Myrmidon - Worker (Fantasy)"
+#Delete "TE:Myrmidon - Warrior (Fantasy)"
+#Delete "TE:Orc (Fantasy)"
+#Delete "TE:Selkie - Seal Form (Fantasy)"
+#Delete "TE:Selkie - Human Form (Fantasy)"
+#Delete "TE:Troll - Male (Fantasy)"
+#Delete "TE:Troll - Female (Fantasy)"
+#Delete "TE:Vampire (Fantasy)"
+#Delete "TE:Vampire Mage (Fantasy)"
+#Delete "TE:Werewolf (Fantasy)"
+#Delete "TE:Werewolf - Wolf Form (Fantasy)"
+
+#DeleteCat TE, "Racial Templates - Fantasy - Undead Lenses"
+#Delete "TE:Ancestral Spirit (Fantasy)"
+#Delete "TE:Ghost (Fantasy)"
+#Delete "TE:Lich (Fantasy)"
+#Delete "TE:Wight - Skeletal (Fantasy)"
+#Delete "TE:Wight - Mummified (Fantasy)"
+
+* Martial Arts
+* Martial Arts Templates
+#Delete "TE:Aikido (Martial Arts)"
+#Delete "TE:Aikijutsu (Martial Arts)"
+#Delete "TE:Archery - Kyudo (Martial Arts)"
+#Delete "TE:Archery - Yabusame (Martial Arts)"
+#Delete "TE:Armatura (Martial Arts)"
+#Delete "TE:Armatura Equestris (Martial Arts)"
+#Delete "TE:Armed Styles - Banshay (Martial Arts)"
+#Delete "TE:Bajutsu (Martial Arts)"
+#Delete "TE:Bando - ABA Bando (Martial Arts)"
+#Delete "TE:Bando - Kachin Bando (Martial Arts)"
+#Delete "TE:Boxing (Martial Arts)"
+#Delete "TE:Boxing - Ancient Greek Boxing (Martial Arts)"
+#Delete "TE:Boxing - Bare-Knuckle Boxing (Martial Arts)"
+#Delete "TE:Capoeira (Martial Arts)"
+#Delete "TE:Chin Na (Martial Arts)"
+#Delete "TE:Death Fist (Martial Arts)"
+#Delete "TE:Dragon-Man Kung Fu (Martial Arts)"
+#Delete "TE:Escrima (Martial Arts)"
+#Delete "TE:Fencing - French Smallsword (Martial Arts)"
+#Delete "TE:Fencing - Italian School (Martial Arts)"
+#Delete "TE:Fencing - La Verdadera Destreza (Martial Arts)"
+#Delete "TE:Fencing - Transitional French School (Martial Arts)"
+#Delete "TE:Force-Swordsmanship (Martial Arts)"
+#Delete "TE:Freefighting (Martial Arts)"
+#Delete "TE:Furusiyya (Martial Arts)"
+#Delete "TE:Hapkido (Martial Arts)"
+#Delete "TE:Hoplomachia (Martial Arts)"
+#Delete "TE:Hsing I Chuan (Martial Arts)"
+#Delete "TE:Hung Gar Kung Fu - Tiger-Crane Style (Martial Arts)"
+#Delete "TE:Hwa Rang Do (Martial Arts)"
+#Delete "TE:Jeet Kune Do (Martial Arts)"
+#Delete "TE:Judo (Martial Arts)"
+#Delete "TE:Jujutsu (Martial Arts)"
+#Delete "TE:Jujutsu - Bartitsu (Martial Arts)"
+#Delete "TE:Jujutsu - Brazilian Jiu-jitsu (Martial Arts)"
+#Delete "TE:Kajukenbo (Martial Arts)"
+#Delete "TE:Kalaripayit (Martial Arts)"
+#Delete "TE:Karate - Goju Ryu (Martial Arts)"
+#Delete "TE:Karate - Isshinryu (Martial Arts)"
+#Delete "TE:Karate - Kyokushin (Martial Arts)"
+#Delete "TE:Karate - Shotokan (Martial Arts)"
+#Delete "TE:Karate - Te (Martial Arts)"
+#Delete "TE:Kempo (Martial Arts)"
+#Delete "TE:Kenjutsu (Martial Arts)"
+#Delete "TE:Kenjutsu - Iaido (Martial Arts)"
+#Delete "TE:Kenjutsu - Iaijutsu (Martial Arts)"
+#Delete "TE:Kenjutsu - Kendo (Martial Arts)"
+#Delete "TE:Kenjutsu - Kendo - Nito Ryu (Martial Arts)"
+#Delete "TE:Kenjutsu - Nito Ryu (Martial Arts)"
+#Delete "TE:Knightly Mounted Combat - Early Medieval (Martial Arts)"
+#Delete "TE:Knightly Mounted Combat - High Medieval (Martial Arts)"
+#Delete "TE:Knightly Mounted Combat - Late Medieval (Martial Arts)"
+#Delete "TE:Kobujutsu (Martial Arts)"
+#Delete "TE:Krabi Krabong (Martial Arts)"
+#Delete "TE:Kuntao (Martial Arts)"
+#Delete "TE:Kusarigamajutsu (Martial Arts)"
+#Delete "TE:Kusarijutsu (Martial Arts)"
+#Delete "TE:Kyujutsu (Martial Arts)"
+#Delete "TE:Lethwei (Martial Arts)"
+#Delete "TE:Longsword Fighting (Martial Arts)"
+#Delete "TE:Masters of Defence Weapon Training (Martial Arts)"
+#Delete "TE:Military Hand-To-Hand - Fairbairn Close Combat Training (Martial Arts)"
+#Delete "TE:Military Hand-To-Hand - Krav Maga (Martial Arts)"
+#Delete "TE:Military Hand-To-Hand - MCMAP - U.S. Marine Corps Martial Arts Program (Martial Arts)"
+#Delete "TE:Military Hand-To-Hand - Sambo (Martial Arts)"
+#Delete "TE:Muay Thai (Martial Arts)"
+#Delete "TE:Naginatajutsu (Martial Arts)"
+#Delete "TE:Pa Kua Chuan (Martial Arts)"
+#Delete "TE:Pak Hok (Martial Arts)"
+#Delete "TE:Pentjak Silat - Kumango Silat (Martial Arts)"
+#Delete "TE:Pentjak Silat - Tapak Sutji Pentjak Silat (Martial Arts)"
+#Delete "TE:Polearm Fighting - Chinese Horse-Cutter Fighting (Martial Arts)"
+#Delete "TE:Polearm Fighting - Glaive Fighting (Martial Arts)"
+#Delete "TE:Polearm Fighting - Naginatado/Atarashii Naginata (Martial Arts)"
+#Delete "TE:Pollaxe Fighting (Martial Arts)"
+#Delete "TE:Praying Mantis Kung Fu (Martial Arts)"
+#Delete "TE:Savate (Martial Arts)"
+#Delete "TE:Savate - La Boxe Française (Martial Arts)"
+#Delete "TE:Shaolin Kung Fu (Martial Arts)"
+#Delete "TE:Shortsword Fighting (Martial Arts)"
+#Delete "TE:Shurikenjutsu (Martial Arts)"
+#Delete "TE:Sojutsu (Martial Arts)"
+#Delete "TE:Spear Fighting - Chinese Spear Fighting (Martial Arts)"
+#Delete "TE:Spear Fighting - Heroic Spear Fighting (Martial Arts)"
+#Delete "TE:Spear Fighting - Iklwa Fighting (Martial Arts)"
+#Delete "TE:Spear Fighting - Jukenjutsu (Bayonet Fighting)"
+#Delete "TE:Spear Fighting - Viking Spear Fighting (Martial Arts)"
+#Delete "TE:Sport Fencing - Foil (Martial Arts)"
+#Delete "TE:Sport Fencing - Saber (Martial Arts)"
+#Delete "TE:Sport Fencing - Schläger (Martial Arts)"
+#Delete "TE:Sport Fencing - Épée (Martial Arts)"
+#Delete "TE:Staff Fighting - Bojutsu (Martial Arts)"
+#Delete "TE:Staff Fighting - Jojutsu (Martial Arts)"
+#Delete "TE:Staff Fighting - Sport Quarterstaff (Martial Arts)"
+#Delete "TE:Stickfighting - African Stickfighting (Martial Arts)"
+#Delete "TE:Stickfighting - La Canne de Combat (Martial Arts)"
+#Delete "TE:Stickfighting - Victorian Singlestick (Martial Arts)"
+#Delete "TE:Sumo (Martial Arts)"
+#Delete "TE:Sword-and-Buckler Play (Martial Arts)"
+#Delete "TE:T'ai Chi (Martial Arts)"
+#Delete "TE:T'ai Chi Chuan (Martial Arts)"
+#Delete "TE:Tae Kwon Do (Martial Arts)"
+#Delete "TE:Taihojutsu (Martial Arts)"
+#Delete "TE:Taijutsu (Martial Arts)"
+#Delete "TE:Wing Chun (Martial Arts)"
+#Delete "TE:Wrestling - Greco-Roman Wrestling (Martial Arts)"
+#Delete "TE:Wrestling - Indian Wrestling (Martial Arts)"
+#Delete "TE:Wrestling - Professional Wrestling (Martial Arts)"
+#Delete "TE:Wrestling - Submission Wrestling (Martial Arts)"
+#Delete "TE:Wushu (Martial Arts)"
+
+<Character Templates>
+
+<Racial Templates>
+Cat Folk, displaycost(40), cost(10),
+	description(Iron Dragon Cat Folk),
+	race(Cat Folk),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-1 to ST:ST,
+		+1 to ST:DX),
+	adds(_
+		AD:Acute Hearing=2,
+		AD:Acute Taste and Smell,
+		AD:Catfall,
+		AD:Claws (Sharp Claws),
+		AD:Night Vision=6,
+		AD:Teeth (Sharp Teeth),
+		AD:Temperature Tolerance,
+		PE:Fur),
+	features(Purring Voice, Tail)
+
+Dragon, displaycost(200), cost(125),
+	description(Iron Dragon Dragon),
+	race(Dragon),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+15 to ST:ST,
+		+2 to ST:HT,
+		+3 to ST:Size Modifier,
+		-1 to ST:Basic Move,
+		+1 to ST:Perception),
+	creates(_
+		"AD:Tail Striker (Crushing), 5, cat(Exotic, Physical), mods(Striker)" _
+			with "Cannot Parry, -40%, group(Striker)" _
+			and  "Clumsy (-2), -40%, group(Striker)"),
+	adds(_
+		AD:Burning Attack=2 _
+			with "Cone (1 yard), +60%, group(_Attack Enhancements)" _
+			and  "Costs Fatigue: 2 FP, -10%, shortname(2 FP), group(_General)" _
+			and  "Reduced Range (x1/10), -30%, shortname(1/10 range), group(_General)",
+		AD:Claws (Talons),
+		AD:Damage Resistance=6 _
+			with "Can't Wear Armor, -40%, group(Damage Resistance)",
+        AD:Extended Lifespan=2,
+        AD:Flight _
+        	with "Winged, -25%, group(Flight)",
+        AD:High Pain Threshold,
+        AD:Longevity,
+        AD:Nictating Membrane=2,
+        AD:Night Vision=8,
+        AD:Regeneration,
+        AD:Teeth (Fangs),
+        AD:Temperature Tolerance=3,
+        DI:Bad Grip=2,
+        DI:Cannot Speak,
+        DI:Horizontal)
+
+Dwarf, displaycost(40), cost(15),
+	description(Iron Dragon Dwarf),
+	race(Dwarf),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+1 to ST:HT,
+		+1 to ST:Will),
+	adds(_
+		AD:Artificer,
+		AD:Extended Lifespan,
+		AD:Lifting ST=2,
+		AD:Longevity,
+		AD:Night Vision=5,
+		PE:Alcohol Tolerance,
+		QU:Cannot Float)
+
+Elf, displaycost(60), cost(15),
+	description(Iron Dragon Elf),
+	race(Elf),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-1 to ST:ST,
+		+1 to ST:DX,
+		+1 to ST:Perception),
+	adds(_
+		AD:Appearance,
+		AD:Less Sleep=3,
+		AD:Magery 0,
+		AD:Perfect Balance,
+		AD:Unaging)
+
+Giant, displaycost(150), cost(130),
+	description(Iron Dragon Giant),
+	race(Giant),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+15 to ST:ST,
+		+2 to ST:Size Modifier,
+		+2 to ST:Basic Move),
+	adds(_
+		AD:Enhanced Move (Ground))
+
+Orc, displaycost(15), cost(-6),
+	description(Iron Dragon Orc),
+	race(Orc),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-1 to ST:IQ,
+		+1 to ST:HT,
+		+2 to ST:Hit Points),
+	creates(_
+		"AD:Resistant to Disease (+3), 3, cat(Mundane, Physical)"),
+	adds(_
+		AD:Acute Taste and Smell=2,
+		AD:Fearlessness=3,
+		AD:Night Vision=5,
+		AD:Rapid Healing,
+		AD:Temperature Tolerance=2,
+		DI:Appearance)
+
+Wee Folk, displaycost(5), cost(-15),
+	description(Iron Dragon Wee Folk),
+	race(Wee Folk),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-3 to ST:ST,
+		+1 to ST:DX,
+		-1 to ST:Size Modifier,
+		-1 to ST:Basic Move),
+	creates(_
+		"AD:Immune to Seasickness, 5, cat(Mundane, Physical)"),
+	adds(_
+		AD:Gifted Artist,
+		AD:Mariner)
+
+Troll, displaycost(60), cost(54),
+	description(Iron Dragon Troll),
+	race(Troll),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+6 to ST:ST,
+		-1 to ST:IQ,
+		+2 to ST:HT,
+		+1 to ST:Size Modifier),
+	adds(_
+		AD:Damage Resistance,
+		AD:Magic Resistance,
+		AD:Night Vision=5 _
+			with "Visually impaired by day, *0",
+		AD:Rapid Healing,
+		AD:Reduced Consumption=2 _
+			with "Cast Iron Stomach, -50%",
+		DI:Appearance=2)
+
+<Undead Creatures>
+Troll Skeleton, displaycost(-105), cost(65),
+	description(Iron Dragon Troll Skeleton),
+	race(Skeletal Troll),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+5 to ST:ST,
+		+2 to ST:DX,
+		-3 to ST:IQ,
+		+2 to ST:HT,
+		+1 to ST:Basic Speed,
+		+1 to ST:Size Modifier _
+	),
+	adds(_
+		AD:Damage Resistance = 2,
+		AD:Doesn't Breathe,
+		AD:Doesn't Eat or Drink,
+		AD:Doesn't Sleep,
+		AD:High Pain Threshold,
+		AD:Indomitable,
+		AD:Injury Tolerance _
+		   with "No Blood, +5, cat(Injury Tolerance)" _
+		   and "No Brains, +5, cat(Injury Tolerance)" _
+		   and "No Eyes, +5, cat(Injury Tolerance)" _
+		   and "No Vitals, +5, cat(Injury Tolerance)" _
+		   and "Unliving, +20, cat(Injury Tolerance)",
+		AD:Magic Resistance,
+		AD:Night Vision=5 _
+			with "Visually impaired by day, *0",
+		AD:Single-Minded,
+		AD:Temperature Tolerance = 10,
+		AD:Unaging,
+		AD:Unfazeable,
+		AD:Vacuum Support,
+		DI:Appearance = 4 _
+		   with "Universal, +25%, cat(Appearance)",
+		DI:Cannot Learn,
+		DI:Dependency (Mana) = 2 _
+		   with "Frequency Needed: Constantly, *5, shortname(Constantly)",
+		DI:Fragile (Brittle),
+		DI:Fragile (Unnatural),
+		DI:Mute,
+		DI:No Sense of Smell/Taste,
+		DI:Reprogrammable,
+		DI:Skinny,
+		DI:Unhealing = 2,
+		DI:Vulnerability (Crushing Attacks) = 3 _
+		   with "Wounding Multiplier ×2, *1, shortname(x2), cat(Vulnerability)",
+		DI: Social Stigma (Dead),
+		DI:Wealth = 3,
+		QU:Cannot Float,
+		QU:Sexless,
+		PA:Automaton _
+	),
+	creates(_
+		"AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+		"AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)" _
+	 ),
+	features(_
+		Affected by Control Zombie; Pentagram; and Turn Zombie,
+		No Mental Skills,
+		Skull has only 2 DR total _
+	)
+
+Troll Zombie, displaycost(-108), cost(31),
+	description(Iron Dragon Troll Zombie),
+	race(Zombie Troll),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+7 to ST:ST,
+		-3 to ST:IQ,
+		+2 to ST:HT,
+		+4 to ST:Hit Points,
+		+1 to ST:Size Modifier _
+	),
+	adds(_
+		AD:Damage Resistance,
+		AD:Doesn't Breathe,
+		AD:Doesn't Eat or Drink,
+		AD:Doesn't Sleep,
+		AD:High Pain Threshold,
+		AD:Indomitable,
+		AD:Injury Tolerance _
+		   with "No Blood, +5, cat(Injury Tolerance)" _
+		   and "Unliving, +20, cat(Injury Tolerance)",
+		AD:Magic Resistance,
+		AD:Night Vision=5 _
+			with "Visually impaired by day, *0",
+		AD:Single-Minded,
+		AD:Temperature Tolerance = 10,
+		AD:Unaging,
+		AD:Unfazeable,
+		DI:Appearance = 4 _
+		   with "Universal, +25%, cat(Appearance)",
+		DI:Bad Smell,
+		DI:Cannot Learn,
+		DI:Dependency (Mana) = 2 _
+		   with "Frequency Needed: Constantly, *5, shortname(Constantly)",
+		DI:Disturbing Voice,
+		DI:Fragile (Unnatural),
+		DI:No Sense of Smell/Taste,
+		DI:Reprogrammable,
+		DI:Social Stigma (Dead),
+		DI:Unhealing = 2,
+		DI:Wealth = 3,
+		QU:Sexless,
+		PA:Automaton _
+	),
+	creates(_
+		"AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+		"AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)" _
+	),
+	features(_
+		Affected by Control Zombie; Pentegram; and Turn Zombie,
+		No Mental Skills,
+		Will become a Skeleton _
+	)
+
+Troll Mummy, displaycost(-52), cost(71),
+	description(Iron Dragon Troll Mummy),
+	race(Zombie Troll),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+7 to ST:ST,
+		-1 to ST:IQ,
+		+2 to ST:HT,
+		+4 to ST:Hit Points,
+		+1 to ST:Size Modifier _
+	),
+	adds(_
+		AD:Damage Resistance,
+		AD:Doesn't Breathe,
+		AD:Doesn't Eat or Drink,
+		AD:Doesn't Sleep,
+		AD:High Pain Threshold,
+		AD:Indomitable,
+		AD:Injury Tolerance _
+		   with "No Blood, +5, cat(Injury Tolerance)" _
+		   and "No Brains, +5, cat(Injury Tolerance)" _
+		   and "No Vitals, +5, cat(Injury Tolerance)" _
+		   and "Unliving, +20, cat(Injury Tolerance)",
+		AD:Magic Resistance,
+		AD:Night Vision=5 _
+			with "Visually impaired by day, *0",
+		AD:Single-Minded,
+		AD:Temperature Tolerance = 10,
+		AD:Unaging,
+		AD:Unfazeable,
+		DI:Appearance = 4 _
+		   with "Universal, +25%, cat(Appearance)",
+		DI:Cannot Learn,
+		DI:Dependency (Mana) = 2 _
+		   with "Frequency Needed: Constantly, *5, shortname(Constantly)",
+		DI:Disturbing Voice,
+		DI:Fragile (Combustible),
+		DI:Fragile (Unnatural),
+		DI:No Sense of Smell/Taste,
+		DI:Reprogrammable,
+		DI:Social Stigma (Dead),
+		DI:Unhealing = 2,
+		DI:Wealth = 3,
+		PA:Automaton _
+	),
+	creates(_
+		"AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+		"AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)" _
+	),
+	features(_
+		Affected by Control Zombie; Pentegram; and Turn Zombie,
+		No Mental Skills,
+		Sterile _
+	)
+
+Vampire, displaycost(80), cost(0),
+	description(Iron Dragon Vampire),
+	race(Vampire),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"DI:Divine Curse (Cannot enter dwelling for first time without being invited), -10",
+		"DI:Restricted Diet (Fresh Blood), -10" _
+	),
+	adds(_
+		"AD:Doesn't Breathe",
+		AD:Injury Tolerance _
+			with "Unliving, +20, group(Injury Tolerance)",
+		AD:Night Vision=6,
+		AD:Supernatural Durability,
+		AD:Unaging,
+		AD:Vampiric Bite,
+		DI:Frightens Animals,
+		DI:Infectious Attack,
+		DI:Social Stigma (Monster),
+		DI:Supernatural Feature _
+			with "No Body Heat: Can gain warmth temporarily, -1, group(Supernatural Feature), shortname(No Body Heat (unless fed))" _
+			and  "No Reflection, -10, group(Supernatural Feature)" _
+			and  "Pallor: can gain the flush of life temporarily, -5, group(Supernatural Feature), shortname(Pallor (unless fed))",
+		DI:Uncontrollable Appetite (Sentient Blood) _
+			with "You resist on a roll of 12 or less (quite often), *1, shortname(12 or less), group(Self-Control)",
+		DI:Unhealing,
+		DI:Weakness (Sunlight)=3 _
+			with "Very Common, *3, group(Weakness)" _
+	),
+	features(_
+		Vulnerable to True Faith,
+		Sterile _
+	)
+
+Cat Folk Vampire, displaycost(113), cost(10),
+	description(Iron Dragon Cat Folk Vampire),
+	race(Cat Folk Vampire),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-1 to ST:ST,
+		+1 to ST:DX),
+	creates(_
+		"DI:Divine Curse (Cannot enter dwelling for first time without being invited), -10",
+		"DI:Restricted Diet (Fresh Blood), -10"),
+	adds(_
+		AD:Acute Hearing=2,
+		AD:Acute Taste and Smell,
+		AD:Catfall,
+		AD:Claws (Sharp Claws),
+		"AD:Doesn't Breathe",
+		AD:Injury Tolerance _
+			with "Unliving, +20, group(Injury Tolerance)",
+		AD:Night Vision=6,
+		AD:Temperature Tolerance,
+		AD:Supernatural Durability,
+		AD:Unaging,
+		AD:Vampiric Bite,
+		PE:Fur,
+		DI:Frightens Animals,
+		DI:Infectious Attack,
+		DI:Social Stigma (Monster),
+		DI:Supernatural Feature _
+			with "No Body Heat: Can gain warmth temporarily, -1, group(Supernatural Feature), shortname(No Body Heat (unless fed))" _
+			and  "No Reflection, -10, group(Supernatural Feature)" _
+			and  "Pallor: can gain the flush of life temporarily, -5, group(Supernatural Feature), shortname(Pallor (unless fed))",
+		DI:Uncontrollable Appetite (Sentient Blood) _
+			with "You resist on a roll of 12 or less (quite often), *1, shortname(12 or less), group(Self-Control)",
+		DI:Unhealing,
+		DI:Weakness (Sunlight)=3 _
+			with "Very Common, *3, group(Weakness)"),
+	features(_
+		Vulnerable to True Faith,
+		Purring Voice,
+		Sterile,
+		Tail)
+
+Dwarf Vampire, displaycost(115), cost(15),
+	description(Iron Dragon Dwarf Vampire),
+	race(Dwarf Vampire),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+1 to ST:HT,
+		+1 to ST:Will),
+	creates(_
+		"DI:Divine Curse (Cannot enter dwelling for first time without being invited), -10",
+		"DI:Restricted Diet (Fresh Blood), -10"),
+	adds(_
+		AD:Artificer,
+		"AD:Doesn't Breathe",
+		AD:Injury Tolerance _
+			with "Unliving, +20, group(Injury Tolerance)",
+		AD:Lifting ST=2,
+		AD:Night Vision=6,
+		AD:Supernatural Durability,
+		AD:Unaging,
+		AD:Vampiric Bite,
+		PE:Alcohol Tolerance,
+		DI:Frightens Animals,
+		DI:Infectious Attack,
+		DI:Social Stigma (Monster),
+		DI:Supernatural Feature _
+			with "No Body Heat: Can gain warmth temporarily, -1, group(Supernatural Feature), shortname(No Body Heat (unless fed))" _
+			and  "No Reflection, -10, group(Supernatural Feature)" _
+			and  "Pallor: can gain the flush of life temporarily, -5, group(Supernatural Feature), shortname(Pallor (unless fed))",
+		DI:Uncontrollable Appetite (Sentient Blood) _
+			with "You resist on a roll of 12 or less (quite often), *1, shortname(12 or less), group(Self-Control)",
+		DI:Unhealing,
+		DI:Weakness (Sunlight)=3 _
+			with "Very Common, *3, group(Weakness)",
+		QU:Cannot Float),
+	features(_
+		Vulnerable to True Faith,
+		Sterile)
+
+Elf Vampire, displaycost(125), cost(15),
+	description(Iron Dragon Elf Vampire),
+	race(Elf Vampire),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-1 to ST:ST,
+		+1 to ST:DX,
+		+1 to ST:Perception),
+	creates(_
+		"DI:Divine Curse (Cannot enter dwelling for first time without being invited), -10",
+		"DI:Restricted Diet (Fresh Blood), -10"),
+	adds(_
+		AD:Appearance,
+		"AD:Doesn't Breathe",
+		AD:Injury Tolerance _
+			with "Unliving, +20, group(Injury Tolerance)",
+		AD:Less Sleep=3,
+		AD:Magery 0,
+		AD:Night Vision=6,
+		AD:Perfect Balance,
+		AD:Supernatural Durability,
+		AD:Unaging,
+		AD:Vampiric Bite,
+		DI:Frightens Animals,
+		DI:Infectious Attack,
+		DI:Social Stigma (Monster),
+		DI:Supernatural Feature _
+			with "No Body Heat: Can gain warmth temporarily, -1, group(Supernatural Feature), shortname(No Body Heat (unless fed))" _
+			and  "No Reflection, -10, group(Supernatural Feature)" _
+			and  "Pallor: can gain the flush of life temporarily, -5, group(Supernatural Feature), shortname(Pallor (unless fed))",
+		DI:Uncontrollable Appetite (Sentient Blood) _
+			with "You resist on a roll of 12 or less (quite often), *1, shortname(12 or less), group(Self-Control)",
+		DI:Unhealing,
+		DI:Weakness (Sunlight)=3 _
+			with "Very Common, *3, group(Weakness)"),
+	features(_
+		Vulnerable to True Faith,
+		Sterile)
+
+Orc Vampire, displaycost(85), cost(-6),
+	description(Iron Dragon Orc Vampire),
+	race(Orc Vampire),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-1 to ST:IQ,
+		+1 to ST:HT,
+		+2 to ST:Hit Points),
+	creates(_
+		"AD:Resistant to Disease (+3), 3, cat(Mundane, Physical)",
+		"DI:Divine Curse (Cannot enter dwelling for first time without being invited), -10",
+		"DI:Restricted Diet (Fresh Blood), -10"),
+	adds(_
+		AD:Acute Taste and Smell=2,
+		"AD:Doesn't Breathe",
+		AD:Fearlessness=3,
+		AD:Injury Tolerance _
+			with "Unliving, +20, group(Injury Tolerance)",
+		AD:Night Vision=6,
+		AD:Supernatural Durability,
+		AD:Temperature Tolerance=2,
+		AD:Unaging,
+		AD:Vampiric Bite,
+		DI:Appearance,
+		DI:Frightens Animals,
+		DI:Infectious Attack,
+		DI:Social Stigma (Monster),
+		DI:Supernatural Feature _
+			with "No Body Heat: Can gain warmth temporarily, -1, group(Supernatural Feature), shortname(No Body Heat (unless fed))" _
+			and  "No Reflection, -10, group(Supernatural Feature)" _
+			and  "Pallor: can gain the flush of life temporarily, -5, group(Supernatural Feature), shortname(Pallor (unless fed))",
+		DI:Uncontrollable Appetite (Sentient Blood) _
+			with "You resist on a roll of 12 or less (quite often), *1, shortname(12 or less), group(Self-Control)",
+		DI:Unhealing,
+		DI:Weakness (Sunlight)=3 _
+			with "Very Common, *3, group(Weakness)"),
+	features(_
+		Vulnerable to True Faith,
+		Sterile)
+
+Wee Folk Vampire, displaycost(105), cost(-15),
+	description(Iron Dragon Wee Folk Vampire),
+	race(Wee Folk Vampire),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-3 to ST:ST,
+		+1 to ST:DX,
+		-1 to ST:Size Modifier,
+		-1 to ST:Basic Move),
+	creates(_
+		"AD:Immune to Seasickness, 5, cat(Mundane, Physical)",
+		"DI:Divine Curse (Cannot enter dwelling for first time without being invited), -10",
+		"DI:Restricted Diet (Fresh Blood), -10"),
+	adds(_
+		"AD:Doesn't Breathe",
+		AD:Gifted Artist,
+		AD:Injury Tolerance _
+			with "Unliving, +20, group(Injury Tolerance)",
+		AD:Mariner,
+		AD:Night Vision=6,
+		AD:Supernatural Durability,
+		AD:Unaging,
+		AD:Vampiric Bite,
+		DI:Frightens Animals,
+		DI:Infectious Attack,
+		DI:Social Stigma (Monster),
+		DI:Supernatural Feature _
+			with "No Body Heat: Can gain warmth temporarily, -1, group(Supernatural Feature), shortname(No Body Heat (unless fed))" _
+			and  "No Reflection, -10, group(Supernatural Feature)" _
+			and  "Pallor: can gain the flush of life temporarily, -5, group(Supernatural Feature), shortname(Pallor (unless fed))",
+		DI:Uncontrollable Appetite (Sentient Blood) _
+			with "You resist on a roll of 12 or less (quite often), *1, shortname(12 or less), group(Self-Control)",
+		DI:Unhealing,
+		DI:Weakness (Sunlight)=3 _
+			with "Very Common, *3, group(Weakness)"),
+	features(_
+		Vulnerable to True Faith,
+		Sterile)
+
+<Wereforms>
+Bear Form, displaycost(52), cost(81),
+	description(Bear form of a werebear),
+	race(Bear Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+4 to ST:ST,
+		+1 to ST:DX,
+		+3 to ST:HT,
+		+2 to ST:Will,
+		+1 to ST:Basic Move),
+	creates(),
+	adds(_
+		AD:Claws (Blunt Claws),
+		AD:Damage Resistance=2,
+		AD:Teeth (Sharp Teeth),
+		AD:Temperature Tolerance=2,
+		PE:Fur,
+		DI:Cannot Speak,
+		DI:No Fine Manipulators,
+		"DI:Semi-Upright",
+		SK:Brawling=4pts),
+	features()
+
+Bear Form (cursed), displaycost(-23), cost(-60),
+	description(Bear form of a werebear),
+	race(Bear Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-6 to ST:IQ,
+		+6 to ST:Perception,
+		+6 to ST:Will),
+	creates(),
+	adds(_
+		DI:Bestial,
+		DI:Hidebound,
+		TE:Bear Form),
+	features()
+
+Boar Form, displaycost(72), cost(119),
+	description(Boar form of a wereboar),
+	race(Boar Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+5 to ST:ST,
+		+2 to ST:DX,
+		+4 to ST:HT,
+		+2 to ST:Will,
+		+2 to ST:Perception,
+		+1 to ST:Size Modifier,
+		+2 to ST:Basic Move),
+	creates(),
+	adds(_
+		AD:Damage Resistance=2,
+		AD:Striker (Cutting),
+		PE:Fur,
+		DI:Bad Temper _
+			with "You resist on a roll of 9 or less, *1.5, shortname(9 or less), group(Self Control)",
+		DI:Cannot Speak,
+		TE:Quadruped),
+	features()
+
+Boar Form (cursed), displaycost(7), cost(-50),
+	description(Boar form of a wereboar),
+	race(Boar Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-5 to ST:IQ,
+		+5 to ST:Will,
+		+5 to ST:Perception),
+	creates(),
+	adds(_
+		DI:Bestial,
+		DI:Hidebound,
+		TE:Boar Form),
+	features()
+
+Snake Form, displaycost(13), cost(47),
+	description(Snake form of a weresnake),
+	race(Snake Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+3 to ST:ST,
+		+2 to ST:DX,
+		+1 to ST:HT,
+		-1 to ST:Basic Move),
+	creates(),
+	adds(_
+		AD:Constriction Attack,
+		DI:Cannot Speak,
+		"DI:Cold-Blooded",
+		TE:Vermiform,
+		SK:Stealth=2pts,
+		SK:Wrestling=4pts),
+	features()
+
+Snake Form (cursed), displaycost(-82), cost(-80),
+	description(Snake form of a weresnake),
+	race(Snake Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-8 to ST:IQ,
+		+8 to ST:Will,
+		+8 to ST:Perception),
+	creates(),
+	adds(_
+		DI:Bestial,
+		DI:Hidebound,
+		TE:Snake Form),
+	features()
+
+Tiger Form, displaycost(94), cost(116),
+	description(Tiger form of a weretiger),
+	race(Tiger Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+7 to ST:ST,
+		+3 to ST:DX,
+		+1 to ST:HT,
+		+1 to ST:Will,
+		+2 to ST:Perception,
+		+4 to ST:Basic Move,
+		+1 to ST:Size Modifier),
+	creates(),
+	adds(_
+		AD:Claws (Sharp Claws),
+		AD:Damage Resistance,
+		AD:Night Vision=5,
+		AD:Teeth (Sharp Teeth),
+		AD:Temperature Tolerance,
+		PE:Fur,
+		DI:Cannot Speak,
+		TE:Quadruped,
+		SK:Brawling=4pts,
+		SK:Stealth=2pts,
+		SK:Swimming=4pts),
+	features()
+
+Tiger Form (cursed), displaycost(19), cost(-60),
+	description(Tiger form of a weretiger),
+	race(Tiger Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-6 to ST:IQ,
+		+6 to ST:Will,
+		+6 to ST:Perception),
+	creates(),
+	adds(_
+		DI:Bestial,
+		DI:Hidebound,
+		TE:Tiger Form),
+	features()
+
+Wolf Form, displaycost(66), cost(84),
+	description(Wolf form of a werewolf),
+	race(Wolf Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		+2 to ST:DX,
+		+2 to ST:HT,
+		+1 to ST:Will,
+		+4 to ST:Perception,
+		+3 to ST:Basic Move),
+	creates(),
+	adds(_
+		AD:Discriminatory Smell,
+		AD:Damage Resistance,
+		AD:Night Vision=2,
+		AD:Teeth (Sharp Teeth),
+		AD:Temperature Tolerance,
+		PE:Fur,
+		PE:Penetrating Voice,
+		DI:Cannot Speak,
+		TE:Quadruped,
+		SK:Brawling=4pts,
+		SK:Tracking=2pts),
+	features()
+
+Wolf Form (cursed), displaycost(-9), cost(-60),
+	description(Wolf form of a werewolf),
+	race(Wolf Form),
+	owns(yes),
+	locks(yes),
+	gives(_
+		-6 to ST:IQ,
+		+6 to ST:Will,
+		+6 to ST:Perception),
+	creates(),
+	adds(_
+		DI:Bestial,
+		DI:Hidebound,
+		TE:Wolf Form),
+	features()
+
+<Lycanthropes>
+Chosen of Jolrael (Bear), displaycost(46), cost(0),
+	description(Holy warrior serving the goddess Jolrael),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Bear), 62" _
+			with "Pact, -10%",
+		"DI:Vow to Protect the Wilds, -10"),
+	adds(),
+	features()
+
+Chosen of Jolrael (Boar), displaycost(47), cost(0),
+	description(Holy warrior serving the goddess Jolrael),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Boar), 80" _
+			with "Pact, -10%",
+		"DI:Vow to Protect the Wilds, -10"),
+	adds(_
+		DI:Bad Temper _
+			with "You resist on a roll of 9 or less, *1.5, shortname(9 or less), group(Self Control)"),
+	features()
+
+Chosen of Jolrael (Snake), displaycost(15), cost(0),
+	description(Holy warrior serving the goddess Jolrael),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Snake), 27" _
+			with "Pact, -10%",
+		"DI:Vow to Protect the Wilds, -10"),
+	adds(),
+	features()
+
+Chosen of Jolrael (Tiger), displaycost(67), cost(0),
+	description(Holy warrior serving the goddess Jolrael),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Tiger), 85" _
+			with "Pact, -10%",
+		"DI:Vow to Protect the Wilds, -10"),
+	adds(),
+	features()
+
+Chosen of Jolrael (Wolf), displaycost(58), cost(0),
+	description(Holy warrior serving the goddess Jolrael),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Wolf), 75" _
+			with "Pact, -10%",
+		"DI:Vow to Protect the Wilds, -10"),
+	adds(),
+	features()
+
+Lycanthrope, displaycost(0), cost(0),
+	description(),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"DI:Vulnerability (x2 from Silver), -20"),
+	adds(_
+		AD:Regeneration=2 _
+			with "Not vs Silver, -20%"),
+	features()
+
+Werebear, displaycost(3), cost(0),
+	description(Lycanthropic curse),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Bear), 15" _
+			with "Trigger (Full Moon), -40%" _
+			and "Uncontrollable, -30%" _
+			and "Minimum Duration (one night), -10%"),
+	adds(_
+		TE:Lycanthrope),
+	features()
+
+Wereboar, displaycost(-10), cost(0),
+	description(Lycanthropic curse),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Boar), 22" _
+			with "Trigger (Full Moon), -40%" _
+			and "Uncontrollable, -30%" _
+			and "Minimum Duration (one night), -10%"),
+	adds(_
+		DI:Bad Temper _
+			with "You resist on a roll of 9 or less, *1.5, shortname(9 or less), group(Self Control)",
+		TE:Lycanthrope),
+	features()
+
+Weresnake, displaycost(3), cost(0),
+	description(Lycanthropic curse),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Snake), 15" _
+			with "Trigger (Full Moon), -40%" _
+			and "Uncontrollable, -30%" _
+			and "Minimum Duration (one night), -10%"),
+	adds(_
+		TE:Lycanthrope),
+	features()
+
+Weretiger, displaycost(7), cost(0),
+	description(Lycanthropic curse),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Tiger), 33" _
+			with "Trigger (Full Moon), -40%" _
+			and "Uncontrollable, -30%" _
+			and "Minimum Duration (one night), -10%"),
+	adds(_
+		TE:Lycanthrope),
+	features()
+
+Werewolf, displaycost(3), cost(0),
+	description(Lycanthropic curse),
+	owns(yes),
+	locks(yes),
+	gives(),
+	creates(_
+		"AD:Alternate Form (Wolf), 15" _
+			with "Trigger (Full Moon), -40%" _
+			and "Uncontrollable, -30%" _
+			and "Minimum Duration (one night), -10%"),
+	adds(_
+		TE:Lycanthrope),
+	features()
+	
+<Martial Arts Styles>
+
+
+********************************************************************************
+[Equipment]
+********************************************************************************
+
+* Delete Equipment from Fantasy
+#Delete "EQ:Repeating Crossbow"
+#Delete "EQ:Ornithopter"
+#Delete "EQ:Winged Harness"
+
+<Clothing>
+
+<Melee Weapons>
+
+<Natural Attacks>
+
+<Muscle-Powered Ranged Weapons>
+
+<Hand Grenades & Incendiaries>
+
+<Firearms - Pistols & SMGs>
+
+<Firearms - Rifles & Shotguns>
+
+<Heavy Weapons>
+
+<Shields>
+
+<Armor - Low Tech Body Armor>
+
+<Armor - Low Tech Limb Armor>
+
+<Armor - Low Tech Headgear>
+
+<Armor - Low Tech Gloves & Footwear>
+
+<Animals>
+
+<Animals - Equestrian Gear>
+
+<Animals - Horse Armor (Barding)>
+
+<Miscellaneous Equipment - Camping & Survival Gear>
+
+<Miscellaneous Equipment - Communications & Information Gear>
+
+<Miscellaneous Equipment - Law-Enforcement¸ Thief¸ & Spy Gear>
+
+<Miscellaneous Equipment - Medical Gear>
+
+<Miscellaneous Equipment - Optics & Sensors>
+
+<Miscellaneous Equipment - Tools>
+
+<Miscellaneous Equipment - Weapon & Combat Accessories>
+
+<Miscellaneous Equipment - Entertainment>
+Playing Cards (deck), techlvl(4), basecost(10), baseweight(0.15)
+Leather Card Case, techlvl(4), basecost(10), baseweight(.1)
+
+<Vehicles - Ground>
+
+<Vehicles - Watercraft>
+
+<Vehicles - Aircraft>
+
+<Vehicles - Spacecraft>
+
+<Valuables>
+Copper Penny, techlvl(3), basecost(1), baseweight(0.01)
+Silver Shilling, techlvl(3), basecost(10), baseweight(0.01)
+Gold Crown, techlvl(3), basecost(200), baseweight(0.01)
+
+1-lb Silver Bar, techlvl(3), basecost(1000), baseweight(1)
+5-lb Silver Bar, techlvl(3), basecost(5000), baseweight(5)
+10-lb Silver Bar, techlvl(3), basecost(10000), baseweight(10)
+1-lb Gold Bar, techlvl(3), basecost(20000), baseweight(1)
+5-lb Gold Bar, techlvl(3), basecost(100000), baseweight(5)
+10-lb Gold Bar, techlvl(3), basecost(200000), baseweight(10)
