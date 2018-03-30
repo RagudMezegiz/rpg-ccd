@@ -5,7 +5,7 @@
 This is a two-column LaTeX format similar to the 4th Edition RTF export formats that Metacreator produced. It does not include the character portrait.  The combat information sheet will appear on its own page, so it can be printed separately.<p>
 Please feel free to ask for extra features or send me corrections.<p>
 Created by Dave Terhune (dave.terhune@gmail.com)<p>
-Version 1.3 (not uploaded)
+Version 1.3
 <ul><li>Allowed word wrapping in "Effect" column of combat maneuvers table.</li></ul>
 Version 1.2 (5/17/2008)
 <ul><li>Added equipment weight</li><li>Corrected spacing between whole and fractional parts of numbers</li></ul>
