@@ -97,11 +97,12 @@ Low Coran (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), level
 Low Coran (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
 Rafter (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
 Rafter (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
+Rogg Sign Language, 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Sign Language, Social Background)
 Seaspeech (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
 Seaspeech (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
 Solar (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
 Solar (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
-Spire Sign Language, 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Sign Language, Social Background)Tal (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
+Spire Sign Language, 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Sign Language, Social Background)
 Tal (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
 Tal (Written), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([Illiterate], Semi-Literate, Literate, Native), cat(Mundane, Social, Language, Language Written, Social Background)
 Trolltalk (Spoken), 1/2, page(B24), mods(Language), upto(3 LimitingTotal), levelnames([None], Broken, Accented, Native), cat(Mundane, Social, Language, Language Spoken, Social Background)
@@ -518,6 +519,7 @@ Exalted Raven, displaycost(30), cost(-10),
         AD:Flight with "Winged, -25%, group(Flight)",
         AD:Mimicry,
         AD:Teeth (Sharp Beak),
+        AD:Ultravision,
         DI:Disturbing Voice,
         DI:Ham-Fisted,
         "DI:Short Arms (2 Arms)"),
@@ -566,7 +568,49 @@ Great Horse, displaycost(45), cost(59),
         DI:Weak Bite),
     features(Tail)
 
-Windrider, displaycost(36), cost(30),
+Minotaur, displaycost(13), cost(10),
+    cat(Racial Templates),
+    description(Minotaurs tend to be solitary and aggressive, and will eat just about anything, up to and including people. They like battle and slaughter; their weapon of choice is a large axe, or a branch used as a club. They rarely use armor, unless they have looted it from a human victim. The few that enter civilized territory do so in order to find jobs as guards, bullies, or soldiers.),
+    page(BS196),
+    race(Minotaur),
+    owns(yes),
+    locks(yes),
+    gives(_
+        +1 to ST:DX,
+        -2 to ST:IQ,
+        +3 to ST:HT _
+        ),
+    adds(_
+        AD:Racial Skill Point Bonus ([Skill]) = 4 respond "Brawling", 
+        AD:Absolute Direction,
+        AD:Acute Hearing = 3,
+        AD:Damage Resistance (Skull) = 2 _
+            with "Partial: Skull, -70%, shortname(Skull Only), gives(=-Owner::Level to DR), group(Damage Resistance), page(B47)",
+        AD:Damage Resistance = 3 _
+            with "Tough Skin, -40%, group(Damage Resistance), page(B47)",
+        AD:Striker (Impaling) _
+            with "Long: any reach, +100%/+200%, group(Striker), page(B88), shortname(Long), gives(=nobase to owner::reach$, ="C,$if(me::level=1 THEN "1" ELSE "1-$solver(me::level)")" to owner::reach$)" _
+            and "Limited Arc: Front, -40%, group(Striker), page(B88)" _
+            respond "Horns",
+        AD:Magic Resistance = 3,
+        AD:Peripheral Vision,
+        DI:Berserk _
+            with "Battle Rage, +50%, group(Berserk), page(B124)" _
+            and "You resist on a roll of  9 or less (fairly often), *1.5, shortname(9 or less), group(Self-Control), page(B121)",
+        DI:Bloodlust _
+            with "You resist on a roll of  9 or less (fairly often), *1.5, shortname(9 or less), group(Self-Control), page(B121)",
+        DI:Appearance = 3,
+        DI:Intolerance = 2 respond "Total",
+        DI:Loner,
+        DI:Social Stigma (Uneducated),
+        {SK:Brawling}==0pts#DoNotOwn _
+        ),
+    creates(_
+        "AD:Racial ST Bonus, 10/20, cat(Exotic Physical, Exotic, Physical), gives(+1 to ST:ST), initmods(Size, -0%, group(Size ST), formula(-@if(ST:Size Modifier > 0 then ST:Size Modifier * 10 else 0)), forceformula(yes))"=3,
+        "DI:Odious Racial Habit (Eats other sapients), -5/-10, upto(3), page(B22), cat(Mundane, Social, Other Physical Features), conditional(-1 to ST:Reaction when "people notice your problem"), noresync(yes)" = 3 _
+        )
+
+Windrider, displaycost(40), cost(30),
     description(Humans modified in the distant past by magicians to have wings.),
     race(Windrider),
     owns(yes),
@@ -581,194 +625,221 @@ Windrider, displaycost(36), cost(30),
         DI:Vulnerability (Crushing)=3 with "Wounding Multiplier x2, *1, group(Vulnerability)"),
     features()
 
+<Racial Templates - Undead>
+
+Ghost, displaycost(93), cost(0),
+    description(A wandering soul without a body.),
+    race(Ghost),
+    owns(yes),
+    locks(yes),
+    gives(),
+    creates(_
+        "AD:Immunity to Metabolic Hazards, 30",
+        "AD:Invisibility, 40, mods(Invisibility)" with "Substantial Only, -10%" and "Usually On, +5%" and "Visible Reflection, -10%",
+        "DI:Dependency (Mana, Daily), -30",
+        "DI:Social Stigma (Dead), -20, conditional(-4 to ST:Reaction)",
+        "QU:Difficult Speech (1 FP/Min), -1" _
+        ),
+    adds(_
+        AD:Doesn't Breathe,
+        AD:Doesn't Eat or Drink,
+        AD:Doesn't Sleep,
+        AD:Insubstantiality with "Always On, -50%",
+        AD:Unaging,
+        DI:Wealth=3 _
+        ),
+    features(_
+        Affected by Spirit magic _
+        )
+
 <Racial Templates - Magic - Undead Creatures>
 
 Skeleton (Magic), displaycost(-167), cost(10),
-	cat(Racial Templates, Racial Templates - Magic),
-	description(This template is one of several undead creatures that can be created with the Zombie spell. A normal dead body produces a zombie; a corpse rotted away to bones produces a skeleton (indeed, zombies rot away to skeletons over time); and a desicated cadaver, or a properly emblamed body, becomes a mummy.),
-	page(M152),
-	race(Skeleton),
-	noresync(yes),
-	owns(yes),
-	locks(yes),
-	gives(_
-		-1 to ST:ST,
-		+2 to ST:DX,
-		-2 to ST:IQ,
-		+1 to ST:Basic Speed _
-		),
-	adds(_
-			AD:Doesn't Breathe,
-			AD:Doesn't Eat or Drink,
-			AD:Doesn't Sleep,
-			AD:Damage Resistance = 2,
-			AD:High Pain Threshold,
-			AD:Indomitable,
-			AD:Injury Tolerance _
-			with "No Blood, +5, cat(Injury Tolerance)" _
-			and "No Brains, +5, cat(Injury Tolerance)" _
-			and "No Eyes, +5, cat(Injury Tolerance)" _
-			and "No Vitals, +5, cat(Injury Tolerance)" _
-			and "Unliving, +20, cat(Injury Tolerance)",
-			AD:Single-Minded,
-			AD:Temperature Tolerance = 10,
-			AD:Unaging,
-			AD:Unfazeable,
-			DI:Appearance = 4 _
-			with "Universal, +25%, cat(Appearance)",
-			DI:Cannot Learn,
-			DI:Dependency (Mana) = 2 _
-			with "Frequency Needed: Constantly, *5, shortname(Constantly)",
-			DI:Fragile (Brittle),
-			DI:Fragile (Unnatural),
-			DI:Mute,
-			DI:No Sense of Smell/Taste,
-			DI:Reprogrammable,
-			DI:Skinny,
-			DI:Unhealing = 2,
-			DI:Vulnerability (Crushing Attacks) = 3 _
-			with "Wounding Multiplier x2, *1, shortname(x2), cat(Vulnerability)",
-			DI:Wealth = 3,
-			QU:Cannot Float,
-			QU:Sexless,
-			PA:Automaton _
-		),
-	creates(_
-			"AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
-			"AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
-			"DI:Social Stigma (Dead), -20, page(F133), cat(Mundane Social, Mundane, Social), conditional(-4 to ST:Reaction), noresync(yes)" _
-		),
-	features(Affected by Control Zombie; Pentegram; and Turn Zombie,
-		No Mental Skills,
-		Skull has only 2 DR total)
+    cat(Racial Templates, Racial Templates - Magic),
+    description(This template is one of several undead creatures that can be created with the Zombie spell. A normal dead body produces a zombie; a corpse rotted away to bones produces a skeleton (indeed, zombies rot away to skeletons over time); and a desicated cadaver, or a properly emblamed body, becomes a mummy.),
+    page(M152),
+    race(Skeleton),
+    noresync(yes),
+    owns(yes),
+    locks(yes),
+    gives(_
+        -1 to ST:ST,
+        +2 to ST:DX,
+        -2 to ST:IQ,
+        +1 to ST:Basic Speed _
+        ),
+    adds(_
+        AD:Doesn't Breathe,
+        AD:Doesn't Eat or Drink,
+        AD:Doesn't Sleep,
+        AD:Damage Resistance = 2,
+        AD:High Pain Threshold,
+        AD:Indomitable,
+        AD:Injury Tolerance _
+            with "No Blood, +5, cat(Injury Tolerance)" _
+            and "No Brains, +5, cat(Injury Tolerance)" _
+            and "No Eyes, +5, cat(Injury Tolerance)" _
+            and "No Vitals, +5, cat(Injury Tolerance)" _
+            and "Unliving, +20, cat(Injury Tolerance)",
+        AD:Single-Minded,
+        AD:Temperature Tolerance = 10,
+        AD:Unaging,
+        AD:Unfazeable,
+        DI:Appearance = 4 _
+            with "Universal, +25%, cat(Appearance)",
+        DI:Cannot Learn,
+        DI:Dependency (Mana) = 2 _
+            with "Frequency Needed: Constantly, *5, shortname(Constantly)",
+        DI:Fragile (Brittle),
+        DI:Fragile (Unnatural),
+        DI:Mute,
+        DI:No Sense of Smell/Taste,
+        DI:Reprogrammable,
+        DI:Skinny,
+        DI:Unhealing = 2,
+        DI:Vulnerability (Crushing Attacks) = 3 _
+            with "Wounding Multiplier x2, *1, shortname(x2), cat(Vulnerability)",
+        DI:Wealth = 3,
+        QU:Cannot Float,
+        QU:Sexless,
+        PA:Automaton _
+        ),
+    creates(_
+        "AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+        "AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+        "DI:Social Stigma (Dead), -20, page(F133), cat(Mundane Social, Mundane, Social), conditional(-4 to ST:Reaction), noresync(yes)" _
+        ),
+    features(Affected by Control Zombie; Pentegram; and Turn Zombie,
+        No Mental Skills,
+        Skull has only 2 DR total)
 
 Skeletal Horse (Magic), displaycost(-162), cost(14),
-	cat(Racial Templates, Racial Templates - Magic),
-	description(This template is one of several undead creatures that can be created with the Zombie spell. A normal dead body produces a zombie; a corpse rotted away to bones produces a skeleton (indeed, zombies rot away to skeletons over time); and a desicated cadaver, or a properly emblamed body, becomes a mummy.),
-	page(M152),
-	race(Skeletal Horse),
-	noresync(yes),
-	owns(yes),
-	locks(yes),
-	gives(_
-		+7 to ST:ST,
-		+2 to ST:DX,
-		-9 to ST:IQ,
-		+1 to ST:HT,
-		+7 to ST:Will,
-		+9 to ST:Perception,
-		+1 to ST:Size Modifier,
-		+1 to ST:Basic Speed,
-		+1 to ST:Move,
-		+2 to SK:Mount _
-		),
-	adds(_
-			"AD:Claws (Hooves)",
-			AD:Damage Resistance = 2,
-			AD:Doesn't Breathe,
-			AD:Doesn't Eat or Drink,
-			AD:Doesn't Sleep,
-			"AD:Enhanced Move (Ground)" = 2,
-			AD:High Pain Threshold,
-			AD:Indomitable,
-			AD:Injury Tolerance _
-			with "No Blood, +5, cat(Injury Tolerance)" _
-			and "No Brains, +5, cat(Injury Tolerance)" _
-			and "No Eyes, +5, cat(Injury Tolerance)" _
-			and "No Vitals, +5, cat(Injury Tolerance)" _
-			and "Unliving, +20, cat(Injury Tolerance)",
-			AD:Peripheral Vision,
-			AD:Single-Minded,
-			AD:Temperature Tolerance = 10,
-			AD:Unaging,
-			AD:Unfazeable,
-			DI:Appearance = 4 _
-			with "Universal, +25%, cat(Appearance)",
-			DI:Cannot Learn,
-			DI:Dependency (Mana) = 2 _
-			with "Frequency Needed: Constantly, *5, shortname(Constantly)",
-			DI:Fragile (Brittle),
-			DI:Fragile (Unnatural),
-			DI:Mute,
-			DI:No Sense of Smell/Taste,
-			DI:Reprogrammable,
-			DI:Skinny,
-			DI:Unhealing = 2,
-			DI:Vulnerability (Crushing Attacks) = 3 _
-			with "Wounding Multiplier x2, *1, shortname(x2), cat(Vulnerability)",
-			DI:Weak Bite,
-			DI:Wealth = 3,
-			QU:Cannot Float,
-			QU:Sexless,
-			PA:Automaton,
-			PA:Quadruped _
-		),
-	creates(_
-			"AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
-			"AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
-			"DI:Social Stigma (Dead), -20, page(F133), cat(Mundane Social, Mundane, Social), conditional(-4 to ST:Reaction), noresync(yes)" _
-		),
-	features(Affected by Control Zombie; Pentegram; and Turn Zombie,
-		No Mental Skills,
-		Skull has only 2 DR total,
-		Tail)
+    cat(Racial Templates, Racial Templates - Magic),
+    description(This template is one of several undead creatures that can be created with the Zombie spell. A normal dead body produces a zombie; a corpse rotted away to bones produces a skeleton (indeed, zombies rot away to skeletons over time); and a desicated cadaver, or a properly emblamed body, becomes a mummy.),
+    page(M152),
+    race(Skeletal Horse),
+    noresync(yes),
+    owns(yes),
+    locks(yes),
+    gives(_
+        +7 to ST:ST,
+        +2 to ST:DX,
+        -9 to ST:IQ,
+        +1 to ST:HT,
+        +7 to ST:Will,
+        +9 to ST:Perception,
+        +1 to ST:Size Modifier,
+        +1 to ST:Basic Speed,
+        +1 to ST:Move,
+        +2 to SK:Mount _
+        ),
+    adds(_
+        "AD:Claws (Hooves)",
+        AD:Damage Resistance = 2,
+        AD:Doesn't Breathe,
+        AD:Doesn't Eat or Drink,
+        AD:Doesn't Sleep,
+        "AD:Enhanced Move (Ground)" = 2,
+        AD:High Pain Threshold,
+        AD:Indomitable,
+        AD:Injury Tolerance _
+            with "No Blood, +5, cat(Injury Tolerance)" _
+            and "No Brains, +5, cat(Injury Tolerance)" _
+            and "No Eyes, +5, cat(Injury Tolerance)" _
+            and "No Vitals, +5, cat(Injury Tolerance)" _
+            and "Unliving, +20, cat(Injury Tolerance)",
+        AD:Peripheral Vision,
+        AD:Single-Minded,
+        AD:Temperature Tolerance = 10,
+        AD:Unaging,
+        AD:Unfazeable,
+        DI:Appearance = 4 _
+            with "Universal, +25%, cat(Appearance)",
+        DI:Cannot Learn,
+        DI:Dependency (Mana) = 2 _
+            with "Frequency Needed: Constantly, *5, shortname(Constantly)",
+        DI:Fragile (Brittle),
+        DI:Fragile (Unnatural),
+        DI:Mute,
+        DI:No Sense of Smell/Taste,
+        DI:Reprogrammable,
+        DI:Skinny,
+        DI:Unhealing = 2,
+        DI:Vulnerability (Crushing Attacks) = 3 _
+            with "Wounding Multiplier x2, *1, shortname(x2), cat(Vulnerability)",
+        DI:Weak Bite,
+        DI:Wealth = 3,
+        QU:Cannot Float,
+        QU:Sexless,
+        PA:Automaton,
+        PA:Quadruped _
+        ),
+    creates(_
+        "AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+        "AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+        "DI:Social Stigma (Dead), -20, page(F133), cat(Mundane Social, Mundane, Social), conditional(-4 to ST:Reaction), noresync(yes)" _
+        ),
+    features(Affected by Control Zombie; Pentegram; and Turn Zombie,
+        No Mental Skills,
+        Skull has only 2 DR total,
+        Tail)
 
 Skeletal Minion, displaycost(-112), cost(10),
-	cat(Racial Templates, Racial Templates - Magic),
-	description(This template is one of several undead creatures that can be created with the Zombie spell. A normal dead body produces a zombie; a corpse rotted away to bones produces a skeleton (indeed, zombies rot away to skeletons over time); and a desicated cadaver, or a properly emblamed body, becomes a mummy.),
-	page(M152),
-	race(Skeleton),
-	noresync(yes),
-	owns(yes),
-	locks(yes),
-	gives(_
-		-1 to ST:ST,
-		+2 to ST:DX,
-		-2 to ST:IQ,
-		+1 to ST:Basic Speed _
-		),
-	adds(_
-			AD:Damage Resistance = 2,
-			AD:Doesn't Breathe,
-			AD:Doesn't Eat or Drink,
-			AD:Doesn't Sleep,
-			AD:High Pain Threshold,
-			AD:Indomitable,
-			AD:Injury Tolerance _
-			with "No Blood, +5, cat(Injury Tolerance)" _
-			and "No Brains, +5, cat(Injury Tolerance)" _
-			and "No Eyes, +5, cat(Injury Tolerance)" _
-			and "No Vitals, +5, cat(Injury Tolerance)" _
-			and "Unliving, +20, cat(Injury Tolerance)",
-			AD:Single-Minded,
-			AD:Temperature Tolerance = 10,
-			AD:Unaging,
-			AD:Unfazeable,
-			DI:Appearance = 4 _
-			with "Universal, +25%, cat(Appearance)",
-			DI:Dependency (Mana) = 2 _
-			with "Frequency Needed: Constantly, *5, shortname(Constantly)",
-			DI:Fragile (Brittle),
-			DI:Fragile (Unnatural),
-			DI:Mute,
-			DI:No Sense of Smell/Taste,
-			DI:Reprogrammable,
-			DI:Skinny,
-			DI:Unhealing = 2,
-			DI:Vulnerability (Crushing Attacks) = 3 _
-			with "Wounding Multiplier x2, *1, shortname(x2), cat(Vulnerability)",
-			QU:Cannot Float,
-			QU:Sexless,
-			PA:Automaton _
-		),
-	creates(_
-			"AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
-			"AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
-			"DI:Social Stigma (Dead), -20, page(F133), cat(Mundane Social, Mundane, Social), conditional(-4 to ST:Reaction), noresync(yes)" _
-		),
-	features(Affected by Control Zombie; Pentegram; and Turn Zombie,
-		No Mental Skills,
-		Skull has only 2 DR total)
+    cat(Racial Templates, Racial Templates - Magic),
+    description(This template is one of several undead creatures that can be created with the Zombie spell. A normal dead body produces a zombie; a corpse rotted away to bones produces a skeleton (indeed, zombies rot away to skeletons over time); and a desicated cadaver, or a properly emblamed body, becomes a mummy.),
+    page(M152),
+    race(Skeleton),
+    noresync(yes),
+    owns(yes),
+    locks(yes),
+    gives(_
+        -1 to ST:ST,
+        +2 to ST:DX,
+        -2 to ST:IQ,
+        +1 to ST:Basic Speed _
+        ),
+    adds(_
+        AD:Damage Resistance = 2,
+        AD:Doesn't Breathe,
+        AD:Doesn't Eat or Drink,
+        AD:Doesn't Sleep,
+        AD:High Pain Threshold,
+        AD:Indomitable,
+        AD:Injury Tolerance _
+            with "No Blood, +5, cat(Injury Tolerance)" _
+            and "No Brains, +5, cat(Injury Tolerance)" _
+            and "No Eyes, +5, cat(Injury Tolerance)" _
+            and "No Vitals, +5, cat(Injury Tolerance)" _
+            and "Unliving, +20, cat(Injury Tolerance)",
+        AD:Single-Minded,
+        AD:Temperature Tolerance = 10,
+        AD:Unaging,
+        AD:Unfazeable,
+        DI:Appearance = 4 _
+            with "Universal, +25%, cat(Appearance)",
+        DI:Dependency (Mana) = 2 _
+            with "Frequency Needed: Constantly, *5, shortname(Constantly)",
+        DI:Fragile (Brittle),
+        DI:Fragile (Unnatural),
+        DI:Mute,
+        DI:No Sense of Smell/Taste,
+        DI:Reprogrammable,
+        DI:Skinny,
+        DI:Unhealing = 2,
+        DI:Vulnerability (Crushing Attacks) = 3 _
+            with "Wounding Multiplier x2, *1, shortname(x2), cat(Vulnerability)",
+        QU:Cannot Float,
+        QU:Sexless,
+        PA:Automaton _
+        ),
+    creates(_
+        "AD:Immunity to Metabolic Hazards, 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+        "AD:Immunity (All Mind Control), 30, cat(Exotic, Physical, Exotic Physical), noresync(yes)",
+        "DI:Social Stigma (Dead), -20, page(F133), cat(Mundane Social, Mundane, Social), conditional(-4 to ST:Reaction), noresync(yes)" _
+        ),
+    features(Affected by Control Zombie; Pentegram; and Turn Zombie,
+        No Mental Skills,
+        Skull has only 2 DR total)
 
 ********************************************************************************
 [Equipment]
@@ -784,7 +855,7 @@ Skeletal Minion, displaycost(-112), cost(10),
 
 <Animals - Equestrian Gear>
 
-<Miscellaneous Equipment - Law-Enforcement¸ Thief¸ & Spy Gear>
+<Miscellaneous Equipment - Law-Enforcement Thief & Spy Gear>
 
 <Miscellaneous Equipment - Medical Gear>
 
