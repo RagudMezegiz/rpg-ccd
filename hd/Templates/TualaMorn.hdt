@@ -1,0 +1,153 @@
+<TEMPLATE version="2.0" extends="builtIn.Main.hdt">
+	<MAINAPP>
+		<NCM XMLID="NCM" DISPLAY="Normal Characteristic Maxima" BASECOST="0">
+			<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+			<OPTION XMLID="NCM" DISPLAY=" No Age Restriction " BASECOST="0"/>
+			<OPTION XMLID="NCM40" DISPLAY="40+ Years Old" ALIAS="Age:  40+" BASECOST="5"/>
+			<OPTION XMLID="NCM60" DISPLAY="60+ Years Old" ALIAS="Age:  60+" BASECOST="10"/>
+			<OPTION XMLID="NCM10" DISPLAY="10- Years Old" ALIAS="Age:  10-" BASECOST="15"/>
+			<OPTION XMLID="NCM10NICE" DISPLAY="10- Years Old (Base not affected)" ALIAS="Age:  10-" 
+				BASECOST="15"/>
+		</NCM>
+	</MAINAPP>
+	<CHARACTERISTICS>
+	</CHARACTERISTICS>
+	<SKILLS>
+		<KNOWLEDGE_SKILL DISPLAY="Knowledge Skill" MINCOST="1" FAMILIARITYROLL="8" 
+			FAMILIARITYCOST="1" INPUTLABEL="Group" OTHERINPUT="Yes" EXCLUSIVE="No">
+			<CHARACTERISTIC_CHOICE>
+				<ITEM CHARACTERISTIC="GENERAL" BASECOST="2" LVLCOST="1" LVLVAL="1" />
+				<ITEM CHARACTERISTIC="INT" BASECOST="3" LVLCOST="1" LVLVAL="1" />
+			</CHARACTERISTIC_CHOICE>
+			<GROUPS DISPLAY="General">
+				<TYPE>KNOWLEDGE</TYPE>
+				<EXAMPLE>Arcane And Occult Lore<SOURCE>Fantasy Hero</SOURCE> </EXAMPLE>
+				<EXAMPLE>Faerie Lore<SOURCE>Tuala Morn</SOURCE> </EXAMPLE>
+				<EXAMPLE>Flora And Fauna<SOURCE>Fantasy Hero</SOURCE> </EXAMPLE>
+				<EXAMPLE>Heraldry<SOURCE>Fantasy Hero</SOURCE> </EXAMPLE>
+				<EXAMPLE>Herbalism And Healing-Lore<SOURCE>Fantasy Hero</SOURCE> </EXAMPLE>
+				<EXAMPLE>Legends And Lore<SOURCE>Fantasy Hero</SOURCE> </EXAMPLE>
+				<EXAMPLE>My Tuath<SOURCE>Tuala Morn</SOURCE> </EXAMPLE>
+				<EXAMPLE>Style Of Magic<SOURCE>Fantasy Hero</SOURCE> </EXAMPLE>
+			</GROUPS>
+			<PEOPLE DISPLAY="Cultural">
+				<TYPE>AREA</TYPE>
+			</PEOPLE>
+			<PLACES DISPLAY="Area">
+				<TYPE>AREA</TYPE>
+			</PLACES>
+			<THINGS DISPLAY="City">
+				<TYPE>AREA</TYPE>
+			</THINGS>
+			<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+			<SOURCE>Sidekick</SOURCE>
+			<DEFINITION>(Hero System Fifth Edition Rule Book, page 41-42; Revised, page 61-62) This very general and 
+				flexible Background Skill includes knowledge of certain groups, places, people and 
+				things -- any subject the character wishes to have knowledge of. The character must 
+				define the subject when he purchases the Skill. </DEFINITION>
+		</KNOWLEDGE_SKILL>
+		<LANGUAGES DISPLAY="Language" EXCLUSIVE="No" INPUTLABEL="Language" OTHERINPUT="Y">
+			<TYPE>LANGUAGE</TYPE>
+			<OPTION XMLID="BASIC" DISPLAY="basic conversation" BASECOST="1">
+				<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+				<SOURCE>Sidekick</SOURCE>
+			</OPTION>
+			<OPTION XMLID="FLUENT" DISPLAY="fluent conversation" BASECOST="2">
+				<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+				<SOURCE>Sidekick</SOURCE>
+			</OPTION>
+			<OPTION XMLID="ACCENT" DISPLAY="completely fluent" BASECOST="3">
+				<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+				<SOURCE>Sidekick</SOURCE>
+			</OPTION>
+			<OPTION XMLID="IDIOMATIC" DISPLAY="idiomatic" ID="IDIOMATIC" BASECOST="4">
+				<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+				<SOURCE>Sidekick</SOURCE>
+			</OPTION>
+			<OPTION XMLID="DIALECTS" DISPLAY="imitate dialects" BASECOST="5">
+				<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+				<SOURCE>Sidekick</SOURCE>
+			</OPTION>
+			
+			<LANGUAGE TYPE="Barbathan" DISPLAY="Barbathan">
+			    <TWOPOINTSIMILARITY>TUALAN</TWOPOINTSIMILARITY>
+			    <TWOPOINTSIMILARITY>PICTOI</TWOPOINTSIMILARITY>
+			</LANGUAGE>
+			<LANGUAGE TYPE="Duvarachan" DISPLAY="Duvarachan">
+			    <THREEPOINTSIMILARITY>TUALAN</THREEPOINTSIMILARITY>
+			</LANGUAGE>
+			<LANGUAGE TYPE="Logren" DISPLAY="Logren">
+			    <ONEPOINTSIMILARITY>TUALAN</ONEPOINTSIMILARITY>
+			</LANGUAGE>
+			<LANGUAGE TYPE="Pictoi" DISPLAY="Pictoi">
+			    <TWOPOINTSIMILARITY>BARBATHAN</TWOPOINTSIMILARITY>
+			</LANGUAGE>
+			<LANGUAGE TYPE="Troll" DISPLAY="Troll">
+			</LANGUAGE>
+			<LANGUAGE TYPE="Tualan" DISPLAY="Tualan">
+			    <TWOPOINTSIMILARITY>BARBATHAN</TWOPOINTSIMILARITY>
+			    <THREEPOINTSIMILARITY>DUVARACHAN</THREEPOINTSIMILARITY>
+			    <ONEPOINTSIMILARITY>LOGREN</ONEPOINTSIMILARITY>
+			    <ONEPOINTSIMILARITY>VULKRING</ONEPOINTSIMILARITY>
+			</LANGUAGE>
+			<LANGUAGE TYPE="Vulkring" DISPLAY="Vulkring">
+			    <ONEPOINTSIMILARITY>TUALAN</ONEPOINTSIMILARITY>
+			</LANGUAGE>
+			
+			<LANGUAGE DISPLAY="Native Languages"/>
+			<ADDER XMLID="LITERACY" DISPLAY="literate" BASECOST="1" EXCLUSIVE="Y">
+				<DEFINITION>If not standard for society</DEFINITION>
+				<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+				<SOURCE>Sidekick</SOURCE>
+			</ADDER>
+			<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+			<SOURCE>Sidekick</SOURCE>
+			<SOURCE>Tuala Morn</SOURCE>
+			<DEFINITION>(Hero System Fifth Edition Rule Book, page 43-44; Revised, page 62-63) This Background Skill 
+				represents a level of fluency in, and knowledge of, a language. </DEFINITION>
+		</LANGUAGES>
+	</SKILLS>
+	<SKILL_ENHANCERS>
+	</SKILL_ENHANCERS>
+	<MARTIAL_ARTS>
+	</MARTIAL_ARTS>
+	<PERKS>
+	    <PERK XMLID="FaerieFavor" DISPLAY="Faerie Favor" BASECOST="0" FIXEDVALUE="No" EXCLUSIVE="Yes">
+			<OPTION XMLID="FAERIE_TOLERANCE" DISPLAY="Faerie Tolerance" BASECOST="5" MINCOST="1" MAXCOST="5" FIXEDVALUE="No">
+				<SOURCE>Tuala Morn</SOURCE>
+			</OPTION>
+			<OPTION XMLID="FAERIE_FAVOR" DISPLAY="Faerie Favor" BASECOST="10" MINCOST="1" MAXCOST="10" FIXEDVALUE="No">
+				<SOURCE>Tuala Morn</SOURCE>
+			</OPTION>
+	    </PERK>
+	</PERKS>
+	<TALENTS>
+	</TALENTS>
+	<POWERS>
+	</POWERS>
+	<MODIFIERS>
+		<MODIFIER XMLID="MASS" DISPLAY="Mass" BASECOST="0" ISLIMITATION="Yes" SHOWOPTIONONLY="Yes">
+			<TYPE>DEFENSE</TYPE>
+			<OPTION XMLID="NONE" DISPLAY="No Mass" BASECOST="0"/>
+			<OPTION XMLID="HALF" DISPLAY="Half Mass" BASECOST="-.5"/>
+			<OPTION XMLID="NORMAL" DISPLAY="Normal Mass" BASECOST="-1"/>
+			<OPTION XMLID="DOUBLE" DISPLAY="Double Listed Mass" BASECOST="-1.5"/>
+			<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+			<DEFINITION>(Hero System 5th Edition Rule Book, page 334) Mass represents the fact that 
+				the armor is heavy, which factors into Encumbrance and may even slow the character 
+				down enough to affect his DCV or movement. </DEFINITION>
+		</MODIFIER>
+		<MODIFIER XMLID="STRMINIMUM" DISPLAY="STR Minimum" BASECOST="-.25" EXCLUSIVE="Yes">
+			<SOURCE>Hero System Fifth Edition Rule Book</SOURCE>
+			<TYPE>ATTACK</TYPE>
+			<OPTION XMLID="1-5" DISPLAY="1-5" BASECOST="-.25"/>
+			<OPTION XMLID="6-14" DISPLAY="6-14" BASECOST="-.5"/>
+			<OPTION XMLID="15-17" DISPLAY="15-17" BASECOST="-.75"/>
+			<OPTION XMLID="OVER17" DISPLAY="18 and higher" BASECOST="-1"/>
+			<ADDER XMLID="CANNOTADD" DISPLAY="STR Min. Cannot Add/Subtract Damage" BASECOST="-.5" 
+				EXCLUSIVE="Yes"/>
+		</MODIFIER>
+	</MODIFIERS>
+	<DISADVANTAGES>
+	</DISADVANTAGES>
+</TEMPLATE>
