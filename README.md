@@ -9,4 +9,4 @@ Custom GCA files are in the gca folder.  Subfolders contain specific types of co
 Custom Hero Designer files are in the hd folder.  Subfolders contain specific types of content:
 - [**Export**](hd/Export): Custom export formats
 - **Rules**: Custom campaign rules
-- **Templates**: Custom character templates
+- [**Templates**](hd/Templates): Custom character templates
