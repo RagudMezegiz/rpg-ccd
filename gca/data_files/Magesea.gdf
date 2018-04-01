@@ -610,7 +610,7 @@ Minotaur, displaycost(13), cost(10),
         "DI:Odious Racial Habit (Eats other sapients), -5/-10, upto(3), page(B22), cat(Mundane, Social, Other Physical Features), conditional(-1 to ST:Reaction when "people notice your problem"), noresync(yes)" = 3 _
         )
 
-Windrider, displaycost(40), cost(30),
+Windrider, displaycost(36), cost(30),
     description(Humans modified in the distant past by magicians to have wings.),
     race(Windrider),
     owns(yes),
