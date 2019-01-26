@@ -5,6 +5,9 @@
 This is a two-column LaTeX format similar to the 4th Edition RTF export formats that Metacreator produced. It does not include the character portrait.  The combat information sheet will appear on its own page, so it can be printed separately.<p>
 Please feel free to ask for extra features or send me corrections.<p>
 Created by Dave Terhune (dave.terhune@gmail.com)<p>
+Version 1.4
+<ul><li>Replace &lt;i&gt;&lt;/i&gt; with \textit{}</li>
+<li>Replace &lt;b&gt;&lt;/b&gt; with \textbf{}</li></ul>
 Version 1.3
 <ul><li>Allowed word wrapping in "Effect" column of combat maneuvers table.</li></ul>
 Version 1.2 (5/17/2008)
@@ -21,6 +24,8 @@ Version 1.1 (5/11/2008)
 <!--REG_REPLACE--><!--REGSTRING-->(\d)\s\\nicefrac<!--/REGSTRING--><!--REPSTRING-->$1\\,\\nicefrac<!--/REPSTRING--><!--/REG_REPLACE-->
 <!--REG_REPLACE--><!--REGSTRING-->(\d+\.?\d*)\s?(m|kg)<!--/REGSTRING--><!--REPSTRING-->\\unit[$1]{$2}<!--/REPSTRING--><!--/REG_REPLACE-->
 <!--REG_REPLACE--><!--REGSTRING-->(\S)&(\S)<!--/REGSTRING--><!--REPSTRING-->$1\\&$2<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING--><i>([^<]*)</i><!--/REGSTRING--><!--REPSTRING-->\\textit{$1}<!--/REPSTRING--><!--/REG_REPLACE-->
+<!--REG_REPLACE--><!--REGSTRING--><b>([^<]*)</b><!--/REGSTRING--><!--REPSTRING-->\\textbf{$1}<!--/REPSTRING--><!--/REG_REPLACE-->
 <!--REPLACE--><!--DEFSTRING-->Chain & Rope<!--/DEFSTRING--><!--REPSTRING-->Chain \& Rope<!--/REPSTRING--><!--/REPLACE-->
 <!--REPLACE--><!--DEFSTRING-->Missiles & Rockets<!--/DEFSTRING--><!--REPSTRING-->Missiles \& Rockets<!--/REPSTRING--><!--/REPLACE-->
 <!--REPLACE--><!--DEFSTRING-->Carts & Carriages<!--/DEFSTRING--><!--REPSTRING-->Carts \& Carriages<!--/REPSTRING--><!--/REPLACE-->
